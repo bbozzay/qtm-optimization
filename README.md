@@ -17,3 +17,7 @@ Search HTML for "Fullstack ADDED" to see comments
 * Minified `<header>` HTML since it used significant space
 * For some images, changed src=" to data-src" to trigger lazyloading. **Do not do this for the product carousel - these images should not lazyload**.
 * Added an inline script that adds class "lazyload lazypreload" to images with data-src attribute
+
+### To be Done
+* Minify all CSS/JS.
+* Resize images to match container width
