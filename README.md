@@ -7,9 +7,7 @@ Preview Links:
 Search HTML for "Fullstack ADDED" to see comments
 
 ## Product Category
-* Updated: Content\pagespecific\weblet-product-category-main.css
-Updated .icon-benefit to use a more specific selector to avoid a conflict with critical CSS.
-
+* Updated `Content\pagespecific\weblet-product-category-main.css` to use more specific CSS rules for the benefit icon.
 * Added Fetch Inject to `<head>`: `<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/fetch-inject"></script>`
 * Added lazysizes to `<head>`: `<script src="/Scripts/vendor/lazysizes.min.js"></script>`
 * Added lazysizes asset to scripts/vendor/lazysizes.min
