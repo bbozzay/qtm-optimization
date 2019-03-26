@@ -22,3 +22,4 @@ Search HTML for "Fullstack ADDED" to see comments
 ### To be Done
 * Minify all CSS/JS.
 * Resize images to match container width
+* Update font awesome all-min.js and all-min.css to only contain included fonts. This is a massive 3.4mb file right now.
