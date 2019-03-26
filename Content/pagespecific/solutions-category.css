@@ -1,0 +1,6 @@
+.links-section__heading {max-width: 150px;}
+@media (min-width: 768px) {
+h5.divider-line{position: relative; z-index: 1; overflow: hidden;} h5.divider-line:before, h5.divider-line:after {position: absolute; top: 40%; overflow: hidden; width: 50%; height: 3px; content: '\a0'; background-color: #c3c3c3;} h5.divider-line:before {margin-left: -50%; text-align: right;}}
+.counter h3 {font-size: 2em;}
+.solutions__item img.icon {width: 3.5em; height: 3em}
+.news .news-wrapper {padding: 20px; border-radius: 5px;}

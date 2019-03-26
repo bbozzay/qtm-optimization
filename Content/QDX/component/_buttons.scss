@@ -1,0 +1,82 @@
+﻿@import "../variables";
+@import "../mixins";
+
+.bg-primary {
+    a.cta-button {
+        background-image: none;
+        background-color: black;
+    }
+}
+
+div[class*="bg-light"],
+div[class*="grad-"] {
+    a.btn {
+        color: $white !important;
+    }
+}
+
+a.moving-arrow {
+    padding: .5em 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.bg-electric {
+    a.btn.btn-arrow {
+        color: $white;
+        font-weight: 400;
+
+        &:hover {
+            color: $white;
+        }
+    }
+}
+
+.btn {
+    display: inline-block;
+    zoom: 1;
+    padding: 0.618em 2.5em;
+    margin-bottom: 0;
+    font-family: Arimo,Arial,Helvetica,sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    user-select: none;
+    @include borderRadius(4px);
+    border: none;
+
+    &.btn-solid-blue {
+        background-color: $deep-blue !important;
+        color: #fff !important;    }
+
+    &.btn-solid-electric {
+        background-color: $electric-blue !important;
+        color: #fff !important;
+    }
+
+
+    &.cta-button {
+        background-color: #00b6f1;
+        color: $white !important;
+        @include linearGradient(#52cdf6,#05a0e2,0%,91%);
+        text-shadow: 0 -1px 1px #05a0e2;
+
+        &:hover {
+            color: $white !important;
+            @include linearGradient(#05a0e2,#52cdf6);
+        }
+    }
+}
+
+
+.video-js button.vjs-big-play-button {
+    background: #0f73c3;
+
+    &:hover {
+        background: #2451d5;
+    }
+}

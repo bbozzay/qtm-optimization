@@ -1,0 +1,33 @@
+﻿@import "../variables";
+@import "../mixins";
+.panel {
+    &.panel-featured-download {
+        @include borderRadius(0);
+        background: $deep-blue;
+        color: white;
+        a{
+            color: $white;
+        }
+        .panel-heading {
+            padding: 20px 5px;
+            line-height: 25px;
+            font-size: 25px;
+            font-family: $DINNext;
+            text-transform: uppercase;
+        }
+
+        .panel-body {
+            padding: 0 2px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .panel-footer {
+            background: none;
+            border: 0;
+            
+        }
+    }
+}

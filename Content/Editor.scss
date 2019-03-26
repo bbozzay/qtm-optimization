@@ -1,0 +1,48 @@
+﻿@import "QDX/variables";
+
+.h1 {
+    EditMenuName: H1;
+}
+
+@for $i from 2 through 6 {
+    .h#{$i} {
+        EditMenuName: H#{$i};
+    }
+}
+
+.img-responsive {
+    EditMenuName: Image Responsive;
+}
+
+.quote,
+q {
+    EditMenuTitle: Content;
+    EditMenuName: Quote;
+}
+
+.font-large {
+    EditMenuName: Large;
+    font-size: 125%;
+}
+
+.small {
+    EditMenuName: Small;
+    font-size: 11px;
+}
+
+.blue {
+    EditMenuName: Blue;
+    color: $blue-primary;
+}
+
+p.btn-primary a,
+.btn.btn-primary {
+    EditMenuTitle: Buttons;
+    EditMenuName: "Primary";
+    color: $white;
+    background: $blue-primary;
+}
+
+.btn.cta-button {
+    EditMenuName: CTA Button;
+}

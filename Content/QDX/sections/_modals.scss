@@ -1,0 +1,18 @@
+﻿@import "../mixins";
+
+#CustomerStoryModal {
+    .modal-content {
+        background: $black;
+        padding: 10px;
+
+        .modal-body {
+            background: $white;
+        }
+    }
+
+    @include breakpoint(768px) {
+        .modal-dialog {
+            width: 680px;
+        }
+    }
+}

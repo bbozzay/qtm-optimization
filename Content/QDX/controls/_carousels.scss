@@ -1,0 +1,172 @@
+﻿@import "../variables";
+
+#carousel-custom-dots {
+    margin-top: 40px;
+
+    @media(max-width: 991px) {
+        margin-top: 20px;
+    }
+
+    @media(max-width: 767px) {
+        padding-left: 0;
+        margin-bottom: 0;
+    }
+
+    @media(max-width: 481px) {
+        padding-left: 0;
+        margin-bottom: 0;
+    }
+
+    li {
+        list-style: none;
+
+        @media(max-width: 481px) {
+            width: 49%;
+        }
+
+        @media(max-width: 767px) {
+            list-style: none;
+            width: 32%;
+            display: inline-block;
+            text-align: center;
+        }
+
+        h3 {
+            font-family: DIN Next W01 Regular, sans-serif;
+            cursor: pointer;
+            color: #969696;
+
+            @media(max-width: 991px) {
+                font-size: 25px;
+                margin-bottom: 20px;
+            }
+
+            &:hover {
+                color: #c3c3c3;
+            }
+        }
+
+        &.active h3 {
+            color: #0f73c3;
+        }
+
+        &:focus h3 {
+            color: #0f73c3;
+        }
+    }
+}
+
+.customer-heading {
+    text-align: center;
+    padding-bottom: 30px;
+
+    .h1, .h2, .h3, .h4 {
+        font-family: $DINNext;
+    }
+}
+
+.start {
+    .home-page-carousel {
+        .slide-item {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: top center;
+            //height: 400px; //DS Changing hegiht for marquee to work with header
+            height: 100vh;
+
+            /*@include breakpoint(768px) {
+                height: 550px;
+            }*/
+        }
+    }
+
+    .home-page-carousel-nav {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+
+        a.item {
+            flex-grow: 1;
+            width: 50%;
+            padding: 30px 20px 40px;
+            color: $text;
+            cursor: pointer;
+            background: $lightgray;
+            font-size: 18px;
+
+            .fa,
+            .fas,
+            .svg-inline--fa {
+                color: $electric-blue;
+                font-size: 54px;
+            }
+
+            @include breakpoint(768px) {
+                width: 33%;
+            }
+
+            @include breakpoint(992px) {
+                width: calc(100% / 6);
+            }
+
+            &:hover {
+                background: $white;
+            }
+        }
+    }
+}
+
+.p-b-40 {
+    margin-bottom: 40px;
+}
+
+.customer-success-story-carousel {
+    border-bottom: 1px solid #dfe0e0;
+
+    .owl-item img {
+        margin: 0 auto;
+    }
+
+    blockquote > img {
+        margin: 0 auto;
+
+        & + img {
+            top: 6px;
+        }
+    }
+
+    .company {
+        color: #333333;
+        font-size: 16px;
+        line-height: 1.4;
+        opacity: 0.6;
+    }
+}
+
+.customer-success-carousel-dots {
+    margin-top: 40px;
+
+    divdiv[class*="col-"]{
+        margin-bottom: 0;
+    }
+    .owl-dot {
+        text-align: center;
+
+        img {
+            vertical-align: middle;
+        }
+        &.active img {
+            filter: none;
+        }
+    }
+}
+
+/*DS Added on 4-17 for grey bar to not apper on mobile devices*/
+@media (max-width: 992px) {
+    .customer-success-story-carousel {
+        border: 0 none;
+    }
+}
+

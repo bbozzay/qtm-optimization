@@ -1,0 +1,474 @@
+@import "variables";
+
+.bg-black {
+    background-color: #0a0a0a;
+    color: #ffffff;
+
+    & a {
+        color: $electric-blue;
+
+        &:hover {
+            color: #ffffff;
+        }
+    }
+
+    & .btn.btn-primary-g, .btn.btn-primary {
+        color: #ffffff;
+    }
+
+    & .btn.move:after {
+        border: 1px solid $electric-blue;
+    }
+
+    & .btn.move:hover:after {
+        border: 1px solid #ffffff;
+    }
+
+
+    & q:before {
+        background: url("#{$image-dir}open-quote.png") left top no-repeat !important;
+        background-image: url("#{$image-dir}open-quote.svg"), none !important;
+    }
+
+    & q:after {
+        background: url("#{$image-dir}close-quote.png") left top no-repeat !important;
+        background-image: url("#{$image-dir}close-quote.svg"), none !important;
+    }
+
+    &.hero {
+        @for $i from 1 through 6 {
+            .h#{$i} {
+                color: $white !important;
+            }
+        }
+    }
+    .h2 {
+        color: $white;
+    }
+}
+
+.bg-dark-grey {
+    background-color: #302E2F;
+    color: #ffffff;
+}
+
+.bg-electric {
+    background-color: $electric-blue;
+    color: #ffffff;
+
+    & a {
+        color: #bfedfb;
+
+        &:hover {
+            color: #ffffff;
+        }
+    }
+
+    & a.btn.btn-arrow {
+        color: #bfedfb;
+    }
+
+    & a.btn.btn-arrow:hover {
+        color: #ffffff;
+    }
+
+    & .btn.move:after {
+        border: 1px solid #bfedfb;
+    }
+
+    & q:before {
+        background: url("#{$image-dir}open-quote-white.png") left top no-repeat !important;
+        background-image: url("#{$image-dir}open-quote-white.svg"), none !important;
+    }
+
+    & q:after {
+        background: url("#{$image-dir}close-quote-white.png") left top no-repeat !important;
+        background-image: url("#{$image-dir}close-quote-white.svg"), none !important;
+    }
+}
+
+.bg-grey {
+    background-color: #565555;
+    color: #ffffff;
+}
+
+.bg-light-blue {
+    background-color: #BFEDFB;
+    color: #333333;
+
+    & a {
+        color: #00b6f1;
+
+        &:hover {
+            color: $deep-blue;
+        }
+    }
+
+    & a.btn.btn-electric {
+        color: #ffffff;
+    }
+
+    & .btn.move:after {
+        border: 1px solid $electric-blue;
+    }
+
+    & .btn.move:hover:after {
+        border: 1px solid $deep-blue;
+    }
+
+
+    & q:before {
+        background: url("#{$image-dir}open-quote.png") left top no-repeat !important;
+        background-image: url("#{$image-dir}open-quote.svg"), none !important;
+    }
+
+    & q:after {
+        background: url("#{$image-dir}close-quote.png") left top no-repeat !important;
+        background-image: url("#{$image-dir}close-quote.svg"), none !important;
+    }
+}
+
+.bg-ltblue {
+    background-color: #bfedfb;
+}
+
+.bg-light-grey {
+    background-color: #EDEDED;
+    color: #333333;
+
+    & a {
+        color: $electric-blue;
+
+        &:hover {
+            color: $deep-blue;
+        }
+    }
+
+    & .btn.btn-electric-g, .btn.btn-electric {
+        color: #ffffff;
+    }
+
+    & .btn.move:after {
+        border: 1px solid $electric-blue;
+    }
+
+    & .btn.move:hover:after {
+        border: 1px solid $deep-blue;
+    }
+
+
+    & q:before {
+        background: url("#{$image-dir}open-quote.png") left top no-repeat !important;
+        background-image: url("#{$image-dir}open-quote.svg"), none !important;
+    }
+
+    & q:after {
+        background: url("#{$image-dir}close-quote.png") left top no-repeat !important;
+        background-image: url("#{$image-dir}close-quote.svg"), none !important;
+    }
+}
+
+.bg-primary {
+    background-color: $deep-blue;
+    color: #ffffff;
+
+    & a {
+        color: #bfedfb;
+
+        &:hover {
+            color: #ffffff;
+        }
+    }
+
+    & a.btn.btn-arrow {
+        color: #bfedfb;
+    }
+
+    & a.btn.btn-arrow:hover {
+        color: #bfedfb;
+    }
+
+    & a.btn.btn-electric {
+        color: #ffffff;
+    }
+
+    & .btn.move:after {
+        border: 1px solid #ffffff;
+    }
+
+    & q:before {
+        background: url("#{$image-dir}open-quote-white.png") left top no-repeat !important;
+        background-image: url("#{$image-dir}open-quote-white.svg"), none !important;
+    }
+
+    & q:after {
+        background: url("#{$image-dir}close-quote-white.png") left top no-repeat !important;
+        background-image: url("#{$image-dir}close-quote-white.svg"), none !important;
+    }
+}
+
+.bg-white {
+    background-color: #ffffff;
+
+    & a {
+        color: $electric-blue;
+
+        &:hover {
+            color: $deep-blue;
+        }
+
+        &.btn.btn-electric {
+            color: #ffffff;
+        }
+    }
+
+
+
+    & .btn.move:after {
+        border: 1px solid $electric-blue;
+    }
+
+    & .btn.move:hover:after {
+        border: 1px solid $deep-blue;
+    }
+
+
+    & q:before {
+        background: url("#{$image-dir}open-quote.png") left top no-repeat !important;
+        background-image: url("#{$image-dir}open-quote.svg"), none !important;
+    }
+
+    & q:after {
+        background: url("#{$image-dir}close-quote.png") left top no-repeat !important;
+        background-image: url("#{$image-dir}close-quote.svg"), none !important;
+    }
+}
+
+.bg-white-grey {
+    background-color: #F5F5F5;
+    color: #ffffff;
+
+    & a {
+        color: $electric-blue;
+
+        &:hover {
+            color: $deep-blue;
+        }
+    }
+
+    & .btn.btn-electric-g {
+        color: #ffffff;
+    }
+
+    & .btn.move:after {
+        border: 1px solid $electric-blue;
+    }
+
+    & .btn.move:hover:after {
+        border: 1px solid $deep-blue;
+    }
+
+
+    & q:before {
+        background: url("#{$image-dir}open-quote.png") left top no-repeat !important;
+        background-image: url("#{$image-dir}open-quote.svg"), none !important;
+    }
+
+    & q:after {
+        background: url("#{$image-dir}close-quote.png") left top no-repeat !important;
+        background-image: url("#{$image-dir}close-quote.svg"), none !important;
+    }
+}
+
+.grad-electric-primary {
+    background-image: linear-gradient(to bottom, $electric-blue 0%,$deep-blue 100%);
+    background-color: $electric-blue;
+    color: #ffffff;
+
+    & a {
+        color: #bfedfb;
+
+        & .btn-electric {
+            color: #ffffff;
+        }
+
+        & .btn.btn-arrow {
+            color: #bfedfb;
+
+            & :hover {
+                color: #ffffff;
+            }
+        }
+    }
+
+
+    & a:hover {
+        color: #ffffff;
+    }
+
+    & a:focus {
+        color: #bfedfb;
+    }
+
+    .btn.move:after {
+        border: 1px solid #bfedfb;
+
+        & :hover {
+            border: 1px solid #ffffff;
+        }
+    }
+
+    & q:before {
+        background: url("#{$image-dir}open-quote-white.png") left top no-repeat !important;
+        background-image: url("#{$image-dir}open-quote-white.svg"), none !important;
+    }
+
+    & q:after {
+        background: url("#{$image-dir}close-quote-white.png") left top no-repeat !important;
+        background-image: url("#{$image-dir}close-quote-white.svg"), none !important;
+    }
+}
+
+.grad-dkgrey-grey {
+    background-image: linear-gradient(to bottom, #302e2f 0%,#565555 100%);
+    background-color: #302e2f;
+    color: #ffffff;
+
+    & a {
+        color: $electric-blue;
+
+        &.btn-electric {
+            color: #ffffff;
+        }
+    }
+
+    & a:hover {
+        color: #ffffff;
+    }
+
+    & a:focus {
+        color: #bfedfb;
+    }
+
+    .btn.move:after {
+        border: 1px solid #ffffff;
+    }
+}
+
+.grad-primary-electric {
+    background-image: linear-gradient(to bottom, $deep-blue 0%,$electric-blue 100%);
+    background-color: $deep-blue;
+    color: #ffffff;
+
+    a:not(.btn) {
+        color: #bfedfb;
+
+        &.btn-electric {
+            color: #ffffff;
+        }
+
+        &:hover {
+            color: #ffffff;
+        }
+
+        &:focus {
+            color: #bfedfb;
+        }
+    }
+
+    .btn.move:after {
+        border: 1px solid #bfedfb;
+    }
+
+    q:before {
+        background: url("#{$image-dir}open-quote-white.png") left top no-repeat !important;
+        background-image: url("#{$image-dir}open-quote-white.svg"), none !important;
+    }
+
+    q:after {
+        background: url("#{$image-dir}close-quote-white.png") left top no-repeat !important;
+        background-image: url("#{$image-dir}close-quote-white.svg"), none !important;
+    }
+}
+
+.grad-ltgrey-white {
+    background-color: #ededed;
+    background-image: -moz-linear-gradient(top, #ededed 0%, #ffffff 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ededed), color-stop(100%,#ffffff));
+    background-image: -webkit-linear-gradient(top, #ededed 0%,#ffffff 100%);
+    background-image: -o-linear-gradient(top, #ededed 0%,#ffffff 100%);
+    background-image: -ms-linear-gradient(top, #ededed 0%,#ffffff 100%);
+    background-image: linear-gradient(to bottom, #ededed 0%,#ffffff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#ffffff',GradientType=0 );
+
+
+    & a {
+        color: $electric-blue;
+
+        &:hover {
+            color: $deep-blue;
+        }
+
+        &.btn.btn-electric {
+            color: #ffffff;
+        }
+    }
+
+
+
+    & .btn.move:after {
+        border: 1px solid $electric-blue;
+    }
+
+    & .btn.move:hover:after {
+        border: 1px solid $deep-blue;
+    }
+
+
+    & q:before {
+        background: url("#{$image-dir}open-quote.png") left top no-repeat !important;
+        background-image: url("#{$image-dir}open-quote.svg"), none !important;
+    }
+
+    & q:after {
+        background: url("#{$image-dir}close-quote.png") left top no-repeat !important;
+        background-image: url("#{$image-dir}close-quote.svg"), none !important;
+    }
+}
+
+.grad-white-ltgrey {
+    background-image: linear-gradient(to bottom, #ffffff 0%,#ededed 100%);
+    background-color: #ffffff;
+
+    & a {
+        color: $electric-blue;
+
+        &:hover {
+            color: $deep-blue;
+        }
+
+        &.btn.btn-electric {
+            color: #ffffff;
+        }
+    }
+
+
+    & .btn.move:after {
+        border: 1px solid $electric-blue;
+    }
+
+    & .btn.move:hover:after {
+        border: 1px solid $deep-blue;
+    }
+
+
+    & q:before {
+        background: url("#{$image-dir}open-quote.png") left top no-repeat !important;
+        background-image: url("#{$image-dir}open-quote.svg"), none !important;
+    }
+
+    & q:after {
+        background: url("#{$image-dir}close-quote.png") left top no-repeat !important;
+        background-image: url("#{$image-dir}close-quote.svg"), none !important;
+    }
+}

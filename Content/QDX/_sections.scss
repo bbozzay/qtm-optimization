@@ -1,0 +1,43 @@
+﻿@import "sections/panels";
+@import "sections/sidebar";
+@import "sections/breadcrumb";
+@import "sections/modals";
+@import "sections/hero";
+@import "sections/listings";
+
+.related-solutions .eq-height div[class*="col-"] {
+    @include breakpoint(768px) {
+        border-right: 1px solid #ffffff;
+        padding-left: 40px;
+        padding-right: 40px;
+
+        &:last-child {
+            border-right: 0;
+        }
+    }
+}
+
+.overlay-container {
+    position: relative;
+
+    .hover-overlay {
+
+        .customer-title {
+            display: none;
+            text-align: center;
+            font-size: 1.5em;
+            font-family: $DINNext;
+            font-weight: normal;
+            line-height: 1.3;
+            color: $white;
+        }
+
+        &:hover {
+            background-color: rgba(0, 0, 0, .75);
+
+            .customer-title {
+                display: block;
+            }
+        }
+    }
+}

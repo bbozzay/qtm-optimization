@@ -1,0 +1,42 @@
+﻿@import "../variables";
+@import "../mixins";
+
+.filter-anchor {
+    .dropdown-menu > p.select {
+        display: block;
+        margin-bottom: 5px;
+        padding: 3px 20px 3px 30px;
+        clear: both;
+        font-weight: 400;
+        color: #333;
+        white-space: nowrap;
+        position: relative;
+
+        &.active:hover .fa-check {
+            color: $white;
+        }
+
+        &:hover {
+            color: $white;
+            background: $blue-primary;
+            cursor: pointer;
+        }
+
+        .fa-check {
+            display: none;
+            color: $blue-primary;
+            position: absolute;
+            top: 7px;
+            left: 5px;
+        }
+
+        &.active {
+            @include breakpoint(768px){
+                font-weight: 700;
+            }
+            .fa-check {
+                display: inline-block;
+            }
+        }
+    }
+}

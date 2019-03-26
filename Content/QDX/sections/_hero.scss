@@ -1,0 +1,11 @@
+﻿.hero {
+    position: relative;
+
+    &.slim .container{
+        padding-top: 47px;
+        padding-bottom: 20px;
+        h1{
+            margin-bottom: 0;
+        }
+    }
+}

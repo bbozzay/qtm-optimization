@@ -1,0 +1,19 @@
+﻿@import "variables";
+.bg-light-gray .h2 {
+    color: #337ab7;
+}
+
+.bg-dark-blue {
+    color: $white;
+    background-color: $dark-blue;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+@for $i from 1 through 6 {
+    .h#{$i}.strong{
+        font-family: $DINNext;
+    }
+}

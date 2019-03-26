@@ -1,0 +1,273 @@
+.panel-body h4,
+h4.horizontal-rule {
+    text-transform: capitalize
+}
+
+.glyphicon {
+    top: 5px !important;
+    color: #565555 !important;
+    padding-left: 5px !important
+}
+
+.panel-default > .panel-heading {
+    color: #333;
+    background-color: #EDEDED !important;
+    border-color: #e4e5e7;
+    padding: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+    .panel-default > .panel-heading a {
+        display: block;
+        padding: 10px 15px
+    }
+
+        .horizontal-rule > span,
+        .panel-default > .panel-heading a:after {
+            position: relative;
+            display: inline-block
+        }
+
+        .panel-default > .panel-heading a:after {
+            content: "";
+            top: 1px;
+            font-family: 'Glyphicons Halflings';
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            float: right;
+            transition: transform .25s linear;
+            -webkit-transition: -webkit-transform .25s linear
+        }
+
+        .panel-default > .panel-heading a[aria-expanded=true] {
+            background-color: #eee
+        }
+
+            .panel-default > .panel-heading a[aria-expanded=true] i:after {
+                content: "\e113" !important;
+                color: #0f73c3
+            }
+
+        .panel-default > .panel-heading a[aria-expanded=false] i:after {
+            content: "\e114" !important
+        }
+
+.accordion-option {
+    width: 100%;
+    float: left;
+    clear: both;
+    margin: 15px 0
+}
+
+    .accordion-option .title {
+        font-size: 20px;
+        font-weight: 700;
+        float: left;
+        padding: 0;
+        margin: 0
+    }
+
+    .accordion-option .toggle-accordion {
+        float: right;
+        font-size: 16px;
+        color: #6a6c6f
+    }
+
+        .accordion-option .toggle-accordion:before {
+            content: "\002b  Expand All Tabs"
+        }
+
+        .accordion-option .toggle-accordion.active:before {
+            content: "\2212  Collapse All Tabs"
+        }
+
+.panel {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none
+}
+
+.panel-title {
+    font-size: 1.3em !important
+}
+
+.panel-default {
+    background-color: #ededed !important;
+    border: 0 !important;
+    box-shadow: none !important
+}
+
+.panel-body {
+    border-top: 0 !important
+}
+
+.panel-default > .panel-heading a[aria-expanded=false] {
+    color: #565555 !important;
+    font-weight: 800 !important
+}
+
+.panel-default > .panel-heading a[aria-expanded=true] {
+    color: #0f73c3;
+    font-weight: 800
+}
+
+h4.horizontal-rule {
+    font-weight: 700
+}
+
+.horizontal-rule {
+    overflow: hidden;
+    text-align: left
+}
+
+    .horizontal-rule > span:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        border-bottom: 2px solid;
+        width: 1000px;
+        margin: 0 20px;
+        left: 100%
+    }
+.card-body h4, h4.horizontal-rule {
+    text-transform: capitalize;
+}
+
+.glyphicon {
+    top: 5px !important;
+    color: #565555 !important;
+    padding-left: 5px !important;
+}
+
+.card > .card-header {
+    color: #333;
+    background-color: #EDEDED !important;
+    border-color: #e4e5e7;
+    padding: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 0 none;
+}
+
+    .card > .card-header a {
+        display: block;
+        padding: 10px 15px;
+    }
+
+        .horizontal-rule > span, .card > .card-header a:after {
+            position: relative;
+            display: inline-block;
+        }
+
+        .card > .card-header a:after {
+            content: "";
+            top: 1px;
+            font-family: 'Glyphicons Halflings';
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            float: right;
+            transition: transform .25s linear;
+            -webkit-transition: -webkit-transform .25s linear;
+        }
+
+        .card > .card-header a[aria-expanded=true] {
+            background-color: #eee;
+        }
+
+            .card > .card-header a[aria-expanded=true] i:after {
+                content: "\e113" !important;
+                color: #0f73c3;
+            }
+
+        .card > .card-header a[aria-expanded=false] i:after {
+            content: "\e114" !important;
+        }
+
+.accordion-option {
+    width: 100%;
+    float: left;
+    clear: both;
+    margin: 15px 0;
+}
+
+    .accordion-option .title {
+        font-size: 20px;
+        font-weight: 700;
+        float: left;
+        padding: 0;
+        margin: 0;
+    }
+
+    .accordion-option .toggle-accordion {
+        float: right;
+        font-size: 16px;
+        color: #6a6c6f;
+    }
+
+        .accordion-option .toggle-accordion:before {
+            content: "\002b  Expand All Tabs";
+        }
+
+        .accordion-option .toggle-accordion.active:before {
+            content: "\2212  Collapse All Tabs";
+        }
+
+.card {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.card-header {
+    font-size: 1.3em !important;
+}
+
+.card {
+    background-color: #ededed !important;
+    border: 0 !important;
+    box-shadow: none !important;
+}
+
+.card-body {
+    border-top: 0 !important;
+}
+
+.card > .card-header a[aria-expanded=false] {
+    color: #565555 !important;
+    font-weight: 800 !important;
+}
+
+.card > .card-header a[aria-expanded=true] {
+    color: #0f73c3;
+    font-weight: 800;
+}
+
+h4.horizontal-rule {
+    font-weight: 700;
+}
+
+.horizontal-rule {
+    overflow: hidden;
+    text-align: left;
+}
+
+    .horizontal-rule > span:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        border-bottom: 2px solid;
+        width: 1000px;
+        margin: 0 20px;
+        left: 100%;
+    }

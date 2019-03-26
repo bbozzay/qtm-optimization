@@ -1,0 +1,42 @@
+﻿.curtain {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.9;
+    z-index: 2;
+}
+
+.large-diagram {
+    display: none;
+    position: absolute;
+    width: 95%;
+    z-index: 5;
+}
+
+.bg-light-grey {
+    .well {
+        background-color: #e9e9e9;
+        border: 1px solid #ccc;
+    }
+
+    .col-sm-6 .well {
+        float: right;
+        text-align: left;
+        max-width: 400px;
+    }
+}
+
+.company-title{
+    font-size: 14px;
+
+}
+
+img.grayscale {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    &:hover{
+        filter: none;
+    }
+}

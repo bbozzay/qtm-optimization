@@ -1,0 +1,48 @@
+﻿.h1 {
+  EditMenuName: H1; }
+
+.h2 {
+  EditMenuName: H2; }
+
+.h3 {
+  EditMenuName: H3; }
+
+.h4 {
+  EditMenuName: H4; }
+
+.h5 {
+  EditMenuName: H5; }
+
+.h6 {
+  EditMenuName: H6; }
+
+.img-responsive {
+  EditMenuName: Image Responsive; }
+
+.quote,
+q {
+  EditMenuTitle: Content;
+  EditMenuName: Quote; }
+
+.font-large {
+  EditMenuName: Large;
+  font-size: 125%; }
+
+.small {
+  EditMenuName: Small;
+  font-size: 11px; }
+
+.blue {
+  EditMenuName: Blue;
+  color: #0f73c3; }
+
+p.btn-primary a,
+.btn.btn-primary {
+  EditMenuTitle: Buttons;
+  EditMenuName: "Primary";
+  color: #ffffff;
+  background: #0f73c3; }
+
+.btn.cta-button {
+  EditMenuName: CTA Button; }
+

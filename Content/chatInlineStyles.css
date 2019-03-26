@@ -1,0 +1,59 @@
+.openPopout, .closePopout {
+    position: absolute;
+    width: 36px;
+    top: 0;
+    left: 0;
+    height: 194px;
+    overflow: hidden;
+}
+
+div[data-state="closed"] .openPopout, div[data-state="opened"] .closePopout {
+    display: block;
+}
+
+div[data-state="opened"] .openPopout, div[data-state="closed"] .closePopout {
+    display: none;
+}
+
+.connectDrawer {
+    top: 25%;
+}
+
+    .connectDrawer ul {
+        margin-left: -6px;
+    }
+
+        .connectDrawer ul li a {
+            line-height: 1.4;
+        }
+
+
+div#liveagent_invite_button_57339000000L014 {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #4e5356;
+  background-color: rgba(78, 83, 86, 0.75);
+  width: 490px;
+  height: 220px;
+}
+
+div#ctl00_pcPopChat2_pnlCloseButton {
+  cursor: pointer;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+div#ctl00_pcPopChat2_pnlBodyText {
+  position: absolute;
+  top: 30px;
+}
+
+div#ctl00_pcPopChat2_pnlBodyButton {
+  cursor: pointer;
+  position: absolute;
+  top: 125px;
+  right: 170px;
+}

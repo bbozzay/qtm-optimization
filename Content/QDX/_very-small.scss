@@ -1,0 +1,223 @@
+.col-vs-1,
+.col-vs-2,
+.col-vs-3,
+.col-vs-4,
+.col-vs-5,
+.col-vs-6,
+.col-vs-7,
+.col-vs-8,
+.col-vs-9,
+.col-vs-10,
+.col-vs-11,
+.col-vs-12 {
+    position: relative;
+    // Prevent columns from collapsing when empty
+    min-height: 1px;
+    // Inner gutter via padding
+    padding-left: ($grid-gutter-width / 2);
+    padding-right: ($grid-gutter-width / 2);
+}
+
+@media (min-width: 321px) and (max-width: $screen-sm - 1px) {
+    .container {
+        @media (max-width: $screen-sm - 1px) {
+            max-width: $screen-sm - 21px;
+        }
+    }
+
+    .col-vs-1,
+    .col-vs-2,
+    .col-vs-3,
+    .col-vs-4,
+    .col-vs-5,
+    .col-vs-6,
+    .col-vs-7,
+    .col-vs-8,
+    .col-vs-9,
+    .col-vs-10,
+    .col-vs-11 {
+        float: left;
+    }
+
+    .col-vs-1 {
+        width: percentage((1 / $grid-columns));
+    }
+
+    .col-vs-2 {
+        width: percentage((2 / $grid-columns));
+    }
+
+    .col-vs-3 {
+        width: percentage((3 / $grid-columns));
+    }
+
+    .col-vs-4 {
+        width: percentage((4 / $grid-columns));
+    }
+
+    .col-vs-5 {
+        width: percentage((5 / $grid-columns));
+    }
+
+    .col-vs-6 {
+        width: percentage((6 / $grid-columns));
+    }
+
+    .col-vs-7 {
+        width: percentage((7 / $grid-columns));
+    }
+
+    .col-vs-8 {
+        width: percentage((8 / $grid-columns));
+    }
+
+    .col-vs-9 {
+        width: percentage((9 / $grid-columns));
+    }
+
+    .col-vs-10 {
+        width: percentage((10/ $grid-columns));
+    }
+
+    .col-vs-11 {
+        width: percentage((11/ $grid-columns));
+    }
+
+    .col-vs-12 {
+        width: 100%;
+    }
+
+    // Push and pull columns for source order changes
+    .col-vs-push-1 {
+        left: percentage((1 / $grid-columns));
+    }
+
+    .col-vs-push-2 {
+        left: percentage((2 / $grid-columns));
+    }
+
+    .col-vs-push-3 {
+        left: percentage((3 / $grid-columns));
+    }
+
+    .col-vs-push-4 {
+        left: percentage((4 / $grid-columns));
+    }
+
+    .col-vs-push-5 {
+        left: percentage((5 / $grid-columns));
+    }
+
+    .col-vs-push-6 {
+        left: percentage((6 / $grid-columns));
+    }
+
+    .col-vs-push-7 {
+        left: percentage((7 / $grid-columns));
+    }
+
+    .col-vs-push-8 {
+        left: percentage((8 / $grid-columns));
+    }
+
+    .col-vs-push-9 {
+        left: percentage((9 / $grid-columns));
+    }
+
+    .col-vs-push-10 {
+        left: percentage((10/ $grid-columns));
+    }
+
+    .col-vs-push-11 {
+        left: percentage((11/ $grid-columns));
+    }
+
+    .col-vs-pull-1 {
+        right: percentage((1 / $grid-columns));
+    }
+
+    .col-vs-pull-2 {
+        right: percentage((2 / $grid-columns));
+    }
+
+    .col-vs-pull-3 {
+        right: percentage((3 / $grid-columns));
+    }
+
+    .col-vs-pull-4 {
+        right: percentage((4 / $grid-columns));
+    }
+
+    .col-vs-pull-5 {
+        right: percentage((5 / $grid-columns));
+    }
+
+    .col-vs-pull-6 {
+        right: percentage((6 / $grid-columns));
+    }
+
+    .col-vs-pull-7 {
+        right: percentage((7 / $grid-columns));
+    }
+
+    .col-vs-pull-8 {
+        right: percentage((8 / $grid-columns));
+    }
+
+    .col-vs-pull-9 {
+        right: percentage((9 / $grid-columns));
+    }
+
+    .col-vs-pull-10 {
+        right: percentage((10/ $grid-columns));
+    }
+
+    .col-vs-pull-11 {
+        right: percentage((11/ $grid-columns));
+    }
+
+    // Offsets
+    .col-vs-offset-1 {
+        margin-left: percentage((1 / $grid-columns));
+    }
+
+    .col-vs-offset-2 {
+        margin-left: percentage((2 / $grid-columns));
+    }
+
+    .col-vs-offset-3 {
+        margin-left: percentage((3 / $grid-columns));
+    }
+
+    .col-vs-offset-4 {
+        margin-left: percentage((4 / $grid-columns));
+    }
+
+    .col-vs-offset-5 {
+        margin-left: percentage((5 / $grid-columns));
+    }
+
+    .col-vs-offset-6 {
+        margin-left: percentage((6 / $grid-columns));
+    }
+
+    .col-vs-offset-7 {
+        margin-left: percentage((7 / $grid-columns));
+    }
+
+    .col-vs-offset-8 {
+        margin-left: percentage((8 / $grid-columns));
+    }
+
+    .col-vs-offset-9 {
+        margin-left: percentage((9 / $grid-columns));
+    }
+
+    .col-vs-offset-10 {
+        margin-left: percentage((10/ $grid-columns));
+    }
+
+    .col-vs-offset-11 {
+        margin-left: percentage((11/ $grid-columns));
+    }
+}

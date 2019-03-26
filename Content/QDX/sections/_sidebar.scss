@@ -1,0 +1,43 @@
+﻿@import "../variables";
+@import "../mixins";
+
+.app-sidebar {
+    &.bordered-container {
+        border: 2px solid #cccccc;
+        padding: 20px;
+    }
+
+    .h3, .h4, .h5, .h6,
+    h3, h4, h5, h6 {
+        text-transform: uppercase;
+        font-family: $DINNext;
+        font-weight: 400;
+    }
+
+    .editorial {
+        a {
+            .h3,
+            h3 {
+                font-size: 19px;
+            }
+
+            .h4,
+            h4 {
+                font-size: 17px;
+            }
+        }
+
+        .e-content,
+        p {
+            font-size: 14px;
+            line-height: 21px;
+            color: #666666;
+        }
+
+        + .editorial {
+            padding-top: 18px;
+            margin-top: 18px;
+            border-top: solid 1px #cccccc;
+        }
+    }
+}

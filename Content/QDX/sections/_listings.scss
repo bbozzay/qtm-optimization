@@ -1,0 +1,33 @@
+﻿@import "../variables";
+@import "../mixins";
+
+.start {
+    &.news-listing,
+    &.calendar-listing {
+        background: $white;
+        padding: 10px;
+
+        @include breakpoint(768px) {
+            padding: 20px;
+        }
+
+        .event-listing-item,
+        .article-listing-item {
+            h5 {
+                color: $text;
+                font-size: 14px;
+            }
+
+            a {
+                color: $blue-primary;
+            }
+        }
+
+        .btn-arrow {
+            color: $electric-blue !important;
+            &:after{
+                border: solid 1px $electric-blue !important;
+            }
+        }
+    }
+}

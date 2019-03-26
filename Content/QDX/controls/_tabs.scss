@@ -1,0 +1,62 @@
+﻿@import "../variables";
+@import "../mixins";
+
+.qdx-tabs {
+    .blue-bar {
+        background: $deep-blue;
+    }
+
+    ul {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+
+        li {
+            flex: 1 0 auto;
+
+            a {
+                padding: 25px 0;
+                display: block;
+                background: none;
+                color: #678fbf;
+                text-align: center;
+
+                &:active, &:focus {
+                    background: none;
+                }
+
+                &:hover {
+                    color: $electric-blue;
+                    background: none;
+                }
+            }
+
+            &.active {
+                background: none;
+
+                a:after {
+                    bottom: -14px;
+                    left: 50%;
+                    z-index: 10;
+                    content: "";
+                    margin-left: -12px;
+                    border-style: solid;
+                    border-width: 14px 12px 0px;
+                    border-color: $deep-blue transparent transparent;
+                    position: absolute;
+                }
+
+                a, a:hover, a:active, a:focus {
+                    background: none;
+                    color: $white;
+                }
+            }
+        }
+    }
+    .tab-pane {
+        padding: 2em 0;
+    }
+}

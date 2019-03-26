@@ -1,0 +1,174 @@
+﻿@import "variables";
+
+@mixin borderRadius($size...) {
+    @if length($size) == 1 {
+        @each $prefix in $prefixes {
+            #{$prefix}border-radius: $size;
+        }
+    }
+    @else {
+        @include customBorderRadius($size...);
+    }
+}
+
+@mixin customBorderRadius($topLeft: 0, $topRight: 0, $bottomRight: 0, $bottomLeft: 0) {
+    @each $prefix in $prefixes {
+        @if $prefix == "-moz-" {
+            @if $topLeft != 0 {
+                -moz-border-radius-topleft: $topLeft;
+            }
+
+            @if $topRight != 0 {
+                -moz-border-radius-topright: $topRight;
+            }
+
+            @if $bottomRight != 0 {
+                -moz-border-radius-bottomright: $bottomRight;
+            }
+
+            @if $bottomLeft != 0 {
+                -moz-border-radius-bottomleft: $bottomLeft;
+            }
+        }
+        @else {
+            @if $topLeft != 0 {
+                #{$prefix}border-top-left-radius: $topLeft;
+            }
+
+            @if $topRight != 0 {
+                #{$prefix}border-top-right-radius: $topRight;
+            }
+
+            @if $bottomRight != 0 {
+                #{$prefix}border-bottom-right-radius: $bottomRight;
+            }
+
+            @if $bottomLeft != 0 {
+                #{$prefix}border-bottom-left-radius: $bottomLeft;
+            }
+        }
+    }
+}
+
+@mixin transparent($color, $alpha) {
+    $rgba: rgba($color, $alpha);
+    $ie-hex-str: ie-hex-str($rgba);
+    background-color: transparent;
+    background-color: $rgba;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#{$ie-hex-str},endColorstr=#{$ie-hex-str});
+    zoom: 1;
+}
+
+@mixin box-shadow($left: 0, $top: 2px, $blur: 2px, $color: #000, $inset: "") {
+    -webkit-box-shadow: $left $top $blur $color #{$inset};
+    -moz-box-shadow: $left $top $blur $color #{$inset};
+    box-shadow: $left $top $blur $color #{$inset};
+}
+
+@mixin linearGradient($top, $bottom){
+    background: $top; /* Old browsers */
+    background: -moz-linear-gradient(top,  $top 0%, $bottom 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$top), color-stop(100%,$bottom)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  $top 0%,$bottom 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  $top 0%,$bottom 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  $top 0%,$bottom 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  $top 0%,$bottom 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}
+
+@mixin linearGradientLeftRight($left, $right) {
+    background-color: $left;
+    background-image: url(images/linear_bg_1.png);
+    background-repeat: repeat-y; /* Safari 4-5, Chrome 1-9 */
+    background: -webkit-gradient(linear, left top, right top, from($left), to($right)); /* Safari 5.1, Chrome 10+ */
+    background: -webkit-linear-gradient(left, $left, $right); /* Firefox 3.6+ */
+    background: -moz-linear-gradient(left, $left, $right); /* IE 10 */
+    background: -ms-linear-gradient(left, $left, $right); /* Opera 11.10+ */
+    background: -o-linear-gradient(left, $left, $right);
+}
+
+
+@mixin linearGradient($top, $bottom, $topPercent: 0%, $bottomPercent: 100%){
+    background: $top; /* Old browsers */
+    background: -moz-linear-gradient(top,  $top $topPercent, $bottom $bottomPercent); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop($topPercent,$top), color-stop($bottomPercent,$bottom)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  $top $topPercent,$bottom $bottomPercent); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  $top $topPercent,$bottom $bottomPercent); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  $top $topPercent,$bottom $bottomPercent); /* IE10+ */
+    background: linear-gradient(to bottom,  $top $topPercent,$bottom $bottomPercent); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}
+
+@mixin breakpoint($screen-size) {
+    @media (min-width: $screen-size) {
+        @content;
+    }
+}
+
+@mixin breakpointScreen($screen-size) {
+    @media only screen and (min-width: $screen-size) {
+        @content;
+    }
+}
+
+@mixin transform( $transform, $only3d: false ) {
+    @if $only3d {
+        @include experimental(transform, $transform, -moz, -webkit, -o, -ms, not -khtml, official );
+    }
+    @else {
+        @include experimental(transform, $transform, -moz, -webkit, -o, -ms, not -khtml, official );
+    }
+}
+
+@mixin experimental($property, $value, $moz: $experimental-support-for-mozilla, $webkit: $experimental-support-for-webkit, $o: $experimental-support-for-opera, $ms: $experimental-support-for-microsoft, $khtml: $experimental-support-for-khtml, $official: true ) {
+    @if $webkit and $experimental-support-for-webkit {
+        -webkit-#{$property}: $value;
+    }
+
+    @if $khtml and $experimental-support-for-khtml {
+        -khtml-#{$property}: $value;
+    }
+
+    @if $moz and $experimental-support-for-mozilla {
+        -moz-#{$property}: $value;
+    }
+
+    @if $ms and $experimental-support-for-microsoft {
+        -ms-#{$property}: $value;
+    }
+
+    @if $o and $experimental-support-for-opera {
+        -o-#{$property}: $value;
+    }
+
+    @if $official {
+        #{$property}: $value;
+    }
+}
+
+// Same as experimental(), but for cases when the property is the same and the value is vendorized
+@mixin experimental-value($property, $value, $moz: $experimental-support-for-mozilla, $webkit: $experimental-support-for-webkit, $o: $experimental-support-for-opera, $ms: $experimental-support-for-microsoft, $khtml: $experimental-support-for-khtml, $official: true ) {
+    @if $webkit and $experimental-support-for-webkit {
+        #{$property}: -webkit-#{$value};
+    }
+
+    @if $khtml and $experimental-support-for-khtml {
+        #{$property}: -khtml-#{$value};
+    }
+
+    @if $moz and $experimental-support-for-mozilla {
+        #{$property}: -moz-#{$value};
+    }
+
+    @if $ms and $experimental-support-for-microsoft {
+        #{$property}: -ms-#{$value};
+    }
+
+    @if $o and $experimental-support-for-opera {
+        #{$property}: -o-#{$value};
+    }
+
+    @if $official {
+        #{$property}: #{$value};
+    }
+}
