@@ -7,7 +7,7 @@ Preview Links:
 # How to implement changes:
 
 ## Hamburger Navigation (applies to all Pages)
-[Download Diff](https://www.diffchecker.com:46997/CzqNsgIK)
+[Download Diff](https://www.diffchecker.com/CzqNsgIK)
 * Update the HTML to use SVGs in the HTML.
 
 ## Hamburger Navigation (applies to all Pages)
@@ -24,12 +24,13 @@ Preview Links:
 
 # Changelog
 
-## Product Category
+## Product Category and Product Category Single
 **V1.1**
 * Adjusted source to more closely match original version (so that it's easier to implement)
 * Updated Nav to use font awesome SVGs inlined instead of adding them with JS
 * Removed redundant JS from vendor.js
 * Created all-slim.min.js, which contains only the font awesome in use on this page
+* Updated footer HTML to include inlined SVGs
 * -Removed page critical CSS since this might be difficult to implement
 * -Removed nav critical css for the same reason.
 * -Removed header minification
