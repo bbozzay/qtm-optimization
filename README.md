@@ -1,13 +1,35 @@
 # Page optimization updates
+Search HTML for "Fullstack ADDED" to see comments. Use the Diff links to compare current page source with modified source.
 
 Preview Links:
-* [Product Category](https://amazing-lichterman-dfb889.netlify.com/product-category.html)
+* [Product Category](https://amazing-lichterman-dfb889.netlify.com/product-category-page.html)
+
+# How to implement changes:
+
+## Hamburger Navigation (applies to all Pages)
+[Download Diff](https://www.diffchecker.com:46997/CzqNsgIK)
+* Update the HTML to use SVGs in the HTML.
+
+## Product Category Page
+[Download Diff](https://www.diffchecker.com/XqNB5NX7)
+* Update Vendor.js with [my new version](/Scripts/vendor.js)
+* Review diff for page specific changes. I tried to keep the same format you are currently using across the site.
+* The all.min.js is massive (3.4mb). Comment it out on this page only and use the file called all-slim.min.js (it has just the icons in use on this page).
+
 
 # Changelog
-Search HTML for "Fullstack ADDED" to see comments
 
 ## Product Category
-* Updated `Content\pagespecific\weblet-product-category-main.css` to use more specific CSS rules for the benefit icon.
+**V1.1**
+* Adjusted source to more closely match original version (so that it's easier to implement)
+* Updated Nav to use font awesome SVGs inlined instead of adding them with JS
+* Removed redundant JS from vendor.js
+* Created all-slim.min.js, which contains only the font awesome in use on this page
+* -Removed page critical CSS since this might be difficult to implement
+* -Removed nav critical css for the same reason.
+* -Removed header minification
+
+**V1.0**
 * Added Fetch Inject to `<head>`: `<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/fetch-inject"></script>`
 * Added lazysizes to `<head>`: `<script src="/Scripts/vendor/lazysizes.min.js"></script>`
 * Added lazysizes asset to scripts/vendor/lazysizes.min

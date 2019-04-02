@@ -5,45 +5,74 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Create. Innovate. Protect. On Quantum. | Quantum </title>
+    <title>File Storage | Quantum </title>
     
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arimo:400,400italic,700italic,700" />
     <link type="text/css" rel="stylesheet" href="https://fast.fonts.net/cssapi/5189c35d-192c-4abc-b994-712e859f8004.css" />
     <link rel="stylesheet" type="text/css" href="https://cdn.quantum.com/floatbox/floatbox.css" />
 
-    
-            
-    <link href="/Content/all.min.css" rel="stylesheet"/>
+<!--Fullstack ADD to any pages using lazyloading: lazy loading for scripts and images-->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/fetch-inject"></script>
+<script src="/Scripts/vendor/lazysizes.min.js"></script>
+<!--Fullstack ADD to any pages using lazyloading: lazy loading for scripts and images-->
+
+<!--Fullstack ADDED for this page only: Replaceed these references with fetch inject-->
+<!-- <link href="/Content/pagespecific/weblet-product-category-vendor.css" rel="stylesheet" />
+<link href="/Content/pagespecific/weblet-product-category-main.css" rel="stylesheet" /> -->
+<style>main{visibility: hidden;opacity:0;}</style>
+<script type="text/javascript">
+//hide sections on load
+window.addEventListener('DOMContentLoaded', (event) => {
+  let sections = document.querySelectorAll("section");
+  sections.forEach(section => {
+    section.style.opacity = "0";
+    section.style.visibility = "hidden";
+  });
+});
+
+//load required styles and reveal sections after
+  fetchInject([
+    '/Content/pagespecific/weblet-product-category-main.css'
+  ], fetchInject([
+    '/Content/pagespecific/weblet-product-category-vendor.css'
+  ])).then(() => {
+    window.addEventListener('DOMContentLoaded', (event) => {
+      let sections = document.querySelectorAll("section");
+      document.querySelector("main").style.visibility = "visible";
+      document.querySelector("main").style.opacity = "1";
+      sections.forEach(section => {
+        section.style.opacity = "";
+        section.style.visibility = "";
+      });
+    });
+  });
+</script>
+<!--Fullstack ADDED for this page only: Replace these references with fetch inject-->
+
+<link href="/Content/all.min.css" rel="stylesheet"/>
 <link href="/Content/new-nav.css" rel="stylesheet"/>
 <link href="/Content/qdx.css" rel="stylesheet"/>
 <link href="/Content/templates.css" rel="stylesheet"/>
-<link href="/Content/owl.theme.default.css" rel="stylesheet"/>
-<link href="/Content/owl.carousel.css" rel="stylesheet"/>
+<!-- <link href="/Content/owl.theme.default.css" rel="stylesheet"/>
+<link href="/Content/owl.carousel.css" rel="stylesheet"/> -->
 <link href="/Content/chatDrawer.css" rel="stylesheet"/>
 <link href="/Content/chatInlineStyles.css" rel="stylesheet"/>
 <link href="/Content/footer.css" rel="stylesheet"/>
 
 
     <link rel="icon" type="image/png" href="/favicon2.ico">
-            <meta name="title" content="Create. Innovate. Protect. On Quantum." />
-        <meta name="keywords" content="video storage, rich media storage,scale-out storage, tiered storage, object storage, data file system, data protection" />
-        <meta name="description" content="The proven leader in storing and managing video content, Quantum delivers the industry’s top streaming performance for video and rich media worklfows." />
-<link href="https://qntm01c1j23inte.azurewebsites.net/en/" rel="canonical" />
+    <link href="/en/products/file-storage/" rel="canonical" />
     
-    <meta property="og:title" content="The Global Leader in Video and Rich Media Storage." />
-    <meta property="og:description" content="The proven leader in storing and managing video content, Quantum delivers the industry’s top streaming performance for video and rich media applications." />
-    <meta property="og:image" content="https://qntm01c1j23inte.dxcloud.episerver.net/contentassets/a80f232c6ed64a5a9401a9def9bfd22a/quantum_logo_blue.png" />
-    <meta property="og:image:secure_url" content="https://qntm01c1j23inte.dxcloud.episerver.net/contentassets/a80f232c6ed64a5a9401a9def9bfd22a/quantum_logo_blue.png" />
-<meta property="og:url" content="https://qntm01c1j23inte.dxcloud.episerver.net/en/" />
+<meta property="og:url" content="https://qntm01c1j23inte.azurewebsites.net/en/products/file-storage/" />
 <meta property="og:locale" content="en_US" />
 <meta property="og:site_name" content="Quantum " />
 
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="Quantum " />
-<meta name="twitter:title" content="The Global Leader in Video and Rich Media Storage." />
-<meta name="twitter:description" content="The proven leader in storing and managing video content, Quantum delivers the industry’s top streaming performance for video and rich media applications." />
+<meta name="twitter:title" content="" />
+<meta name="twitter:description" content="" />
 
-<meta name="twitter:image" content="https://qntm01c1j23inte.dxcloud.episerver.net/contentassets/a80f232c6ed64a5a9401a9def9bfd22a/quantum_logo_blue.png" />
+<meta name="twitter:image" content="" />
 
 
 
@@ -100,20 +129,22 @@
     </script>
 
 
-    <link rel="stylesheet" type="text/css" href="/contentassets/a80f232c6ed64a5a9401a9def9bfd22a/homepage-marquee-custom.css" />
-<link rel="stylesheet" type="text/css" href="/Content/home.css" />
-<link rel="stylesheet" type="text/css" href="/Content/aos.css" />
+    <link rel="stylesheet" type="text/css" href="/Content/pagespecific/technology-partners.css" />
 <style type="text/css">
-.banner { background-image: url(/globalassets/backgrounds/globe3.jpg)}
-</style>
-<style type="text/css">
-@media (max-width: 768px) {
-#LanguageSelect .modal-dialog {
+/*@media (max-width: 991px) {
+.products .products__slider-wrapper .products__slider-js .owl-nav.disabled {
 display: block;
 }
-.language-select a.selected, .language-select a {
-text-align: center
+}*/
+
+@media (min-width: 1600px) {
+.products .products__slider-wrapper .products__slider-js .owl-nav.disabled {
+display: block;
 }
+}
+</style>
+<style type="text/css">
+.section-53370d8a-5df2-4488-b5f5-48825db9ce37 { background-image: url('/globalassets/home/hp-vertical-me-new.png');}
 </style>
 <script type="text/javascript" src="/WebResource.axd?d=06BwN-V4cbMsRvf09OiYrvYAIg7mv9SbdRN_UW07JtJDV2dVoGLmP20uP9FU7QzQC8dzVaVRhqzsI9jx5yvfELA9clfbNy6-lO87F_udAYuPdVFhOd6LYN-qyebEUGXK0mXa4R7SGVFHG7oIjNrMOeKOqAkN0Fdb7HLQDOGEiQWu2pk-JlsTCPOutgb5tDNZ0&t=636645725820000000"></script>
 <script type="text/javascript">
@@ -124,12 +155,12 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 </script>
    
 <script type="text/javascript">var appInsights=window.appInsights||function(config){function t(config){i[config]=function(){var t=arguments;i.queue.push(function(){i[config].apply(i,t)})}}var i={config:config},u=document,e=window,o="script",s="AuthenticatedUserContext",h="start",c="stop",l="Track",a=l+"Event",v=l+"Page",r,f;setTimeout(function(){var t=u.createElement(o);t.src=config.url||"https://az416426.vo.msecnd.net/scripts/a/ai.0.js";u.getElementsByTagName(o)[0].parentNode.appendChild(t)});try{i.cookie=u.cookie}catch(y){}for(i.queue=[],r=["Event","Exception","Metric","PageView","Trace","Dependency"];r.length;)t("track"+r.pop());return t("set"+s),t("clear"+s),t(h+a),t(c+a),t(h+v),t(c+v),t("flush"),config.disableExceptionTracking||(r="onerror",t("_"+r),f=e[r],e[r]=function(config,t,u,e,o){var s=f&&f(config,t,u,e,o);return s!==!0&&i["_"+r](config,t,u,e,o),s}),i}({instrumentationKey:"038d8eaa-66ed-42ca-a93e-845239d23e5c",sdkExtension:"a"});window.appInsights=appInsights;appInsights.queue&&appInsights.queue.length===0&&appInsights.trackPageView();</script></head>
-<body class="start">
+<body class="webletproductcategory">
     
     
 
 
-<header>
+  <header>
     <div class="container">
         <div class="d-flex align-items-center justify-content-between">
             <div class="d-flex align-items-center">
@@ -2195,167 +2226,316 @@ Solutions                                                            </h4>
 
 
 
-<div id="spacer"></div>
-
-<div class="container-fluid no-padding-bottom no-padding-lr " style="position: relative; height: 500px;">
-    <section class="row no-margin-lr">
-            <a href="/en/company/about-us/">
-                <div class="video-container hidden-xs hidden-sm hidden-md">
+<main class="main-home">
 
 
+        <section class="top-section white-text" data-parallax="scroll" data-image-src="/globalassets/testingimagestbd/product_marquee.jpg">
+            <div class="container">
+                <div class="col-xs-12 col-md-6">
+                    <h2 class="top-section__title">
+                        Unmatched Streaming Performance.
+                    </h2>
+                    <h3 class="top-section__description">
+                        <p>Recognized as a leader in scale-out storage for high volume, rich media workflows, Quantum file solutions are&nbsp;trusted by thousands of organizations worldwide.</p>
+                    </h3>
+                </div>                
+            </div>
+        </section> <!-- end top-section section -->
 
-<video id="Video-11861" autoplay="true"
-       muted="true" loop="true" width="1280" height="720" poster="">
-    <source type="video/mp4" src="/globalassets/qt_v6_type_crop.mp4">
-</video>                </div>
 
-                <div class="banner hidden-lg hidden-xlg">
-                    <div class="container">
-                        <h1><strong>Create. Innovate. Protect. On Quantum.</strong></h1>
-                    </div>
+<section class="links-section">
+    <div class="container">
+        <div class="links-section__wrapper">
+            <div class="links-section__left-part">
+                <div class="links-section__heading">File Products</div>
+                <nav class="links-section__nav">
+                    <ul class="links-section__list owl-carousel" id="sub_nav">
+                                <li class="links-section__item active" >
+                                    <a class="links-section__links links-section__links-js js-scroll"
+                                       href="#Overview" data-name="Overview">Overview</a>                                   
+                                </li>
+                                <li class="links-section__item">
+                                    <a class="links-section__links links-section__links-js js-scroll"
+                                       href="#Products" data-name="  Products">Products</a>                                 
+                                </li>
+                                <li class="links-section__item">
+                                    <a class="links-section__links links-section__links-js js-scroll"
+                                       href="#Benefits" data-name="  Benefits">Benefits</a>                                 
+                                </li>
+                                <li class="links-section__item">
+                                    <a class="links-section__links links-section__links-js js-scroll"
+                                       href="#Solutions" data-name="  Solutions">Solutions</a>                                 
+                                </li>
+                                <li class="links-section__item">
+                                    <a class="links-section__links links-section__links-js js-scroll"
+                                       href="#Customers" data-name="  Customers">Customers</a>                                 
+                                </li>
+                                <li class="links-section__item">
+                                    <a class="links-section__links links-section__links-js js-scroll"
+                                       href="#Partners" data-name="  Partners">Partners</a>                                 
+                                </li>
+                                <li class="links-section__item">
+                                    <a class="links-section__links links-section__links-js js-scroll"
+                                       href="#Resources" data-name="  Resources">Resources</a>                                 
+                                </li>
+                    </ul>
+                    <div class="links-section__nav-scroll"></div>
+                </nav>
+            </div>
+            <div class="links-section__right-part">
+                <a href="#" class="links-section__help dropdown-js">
+                    <svg class="icon icon-help">
+                        <use xlink:href="/Content/Images/svg-sprite.svg#help"></use>
+                    </svg>
+                    <span>Let us help</span>
+                    <i class="fas fa-chevron-down"></i>
+                </a>
+                <div class="links-section__dropdown">
+                    <ul>
+                        <li>
+                            <a href="javascript:$.Qchat_OpenChat();" onclick="_gaq.push(['_trackEvent', 'Connect popout', 'chat', 'Live Chat',, false]);" class="btn btn-solid-blue">
+                                <i class="fas fa-comment"></i>
+                                Chat Now
+                            </a>
+                        </li>
+                                <li>
+                                    <a href="/en/company/contact-us/" class="links-section__dropdown-link">
+                                        Get a call from Presales
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/en/company/contact-us/" class="links-section__dropdown-link">
+                                        Product / Technical Support
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/en/company/contact-us/" class="links-section__dropdown-link">
+                                        Find a Local Reserve
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/en/company/contact-us/" class="links-section__dropdown-link">
+                                        Training &amp; Certification
+                                    </a>
+                                </li>
+                    </ul>
                 </div>
-                <div class="overlay hidden-xs hidden-sm hidden-md" style="position: absolute; width:100%; height:100%">
-                    <div class="overlay-dots" style="position:absolute; width: 100%; height: 100%">
-                        <div class="container text-center" style="height: 100%">
-                            <div class="hero-bottom-triangle"></div>
-                            <div class="row justify-content-center align-items-center" style="height: 100%">
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </a>
-    </section>
-</div>
-
-
-    <section class="bg-light-grey customer-logos">
-        <div class="container" style="padding-bottom: 0px !important; padding-top: 40px">
-            <div class="row">
-                
-
-<div class="col-xs-4 col-md-2 text-center text-grey no-margin-bottom">
-    <div class="cycle-slideshow"
-         data-cycle-fx="fade"        
-         data-cycle-auto-height="2:1"
-         data-cycle-speed="1000"
-         data-cycle-delay="2500">
-
-        <img src="/globalassets/home/notre-dame-132x63.png" class="first" alt="Notre Dame"/>
-                <img src="/globalassets/home/nasa-132x63.png" alt="NASA" />
-                <img src="/globalassets/home/mlb-132x63.png" alt="MLB" />
-                <img src="/globalassets/home/crown-media-132x63.png" alt="Crown Media" />
-    </div>
-</div>
-
-<div class="col-xs-4 col-md-2 text-center text-grey no-margin-bottom">
-    <div class="cycle-slideshow"
-         data-cycle-fx="fade"        
-         data-cycle-auto-height="2:1"
-         data-cycle-speed="1000"
-         data-cycle-delay="-1500">
-
-        <img src="/globalassets/home/swordfish-132x63.png" class="first" alt="Swordfish"/>
-                <img src="/globalassets/home/hbo-132x63_jc.png" alt="HBO" />
-                <img src="/globalassets/home/buzzfeed-132x63.png" alt="BuzzFeed" />
-                <img src="/globalassets/home/dodgers-132x63.png" alt="Los Angeles Dodgers" />
-    </div>
-</div>
-
-<div class="col-xs-4 col-md-2 text-center text-grey no-margin-bottom">
-    <div class="cycle-slideshow"
-         data-cycle-fx="fade"        
-         data-cycle-auto-height="2:1"
-         data-cycle-speed="1000"
-         data-cycle-delay="500">
-
-        <img src="/globalassets/home/hawaii-state-health-132x63.png" class="first" alt="HAWAII STATE HEALTH"/>
-                <img src="/globalassets/home/bbc-ni-132x63.png" alt="BBC" />
-                <img src="/globalassets/home/citizen-pictures-132x63.png" alt="CITIZEN PICTURES" />
-                <img src="/globalassets/home/sony-pictures-132x63.png" alt="Sony Pictures" />
-    </div>
-</div>
-
-<div class="col-xs-4 col-md-2 text-center text-grey no-margin-bottom">
-    <div class="cycle-slideshow"
-         data-cycle-fx="fade"        
-         data-cycle-auto-height="2:1"
-         data-cycle-speed="1000"
-         data-cycle-delay="-2200">
-
-        <img src="/globalassets/home/scribbs-132x63.png" class="first" alt="SCRIPPS"/>
-                <img src="/globalassets/home/intel-132x63.png" alt="Intel" />
-                <img src="/globalassets/home/airbus-132x63.png" alt="AIRBUS" />
-                <img src="/globalassets/home/west-coast-132x63.png" alt="WEST COAST" />
-    </div>
-</div>
-
-<div class="col-xs-4 col-md-2 text-center text-grey no-margin-bottom">
-    <div class="cycle-slideshow"
-         data-cycle-fx="fade"        
-         data-cycle-auto-height="2:1"
-         data-cycle-speed="1000"
-         data-cycle-delay="1500">
-
-        <img src="/globalassets/home/gopro.png" class="first" alt="GoPro"/>
-                <img src="/globalassets/home/framestore-132x63.png" alt="FRAMESTORE" />
-                <img src="/globalassets/home/calgary-police-132x63.png" alt="CALGARY POLICE" />
-                <img src="/globalassets/home/usd-132x63.png" alt="USD" />
-    </div>
-</div>
-
-<div class="col-xs-4 col-md-2 text-center text-grey no-margin-bottom">
-    <div class="cycle-slideshow"
-         data-cycle-fx="fade"        
-         data-cycle-auto-height="2:1"
-         data-cycle-speed="1000"
-         data-cycle-delay="-500">
-
-        <img src="/globalassets/home/linkedin.png" class="first" alt="LinkedIn"/>
-                <img src="/globalassets/home/v-pharma-132x63.png" alt="v-pharma" />
-                <img src="/globalassets/home/maple-leaf-132x63.png" alt="Maple Leaf" />
-                <img src="/globalassets/home/workforce-132x63.png" alt="Workforce" />
-    </div>
-</div>
             </div>
         </div>
-    </section>
-    <section class="bg-white" data-aos="fade-up" data-aos-duration="1500">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 text-center">
-                    <h2 class="text-uppercase text-primary">TECHNOLOGY AND SERVICES TO HELP YOU DO WHAT YOU DO BEST</h2>
-<style><!--
-@media (max-width: 767px) {
-  .modal.fade.in {
-	  top: auto !important; 
-  }
-}
-.who {
-overflow: hidden;
-}
-.aos-animate {
-overflow: hidden;
-}
-.cycle-slideshow img {
-	visibility: hidden;
-}
-.energy {
-    background-image: url("https://www.quantum.com/globalassets/home/HP-vertical-energy-new2.png")!important;
-}
-.conversion-opportunity {
-    background-image: url("https://www.quantum.com/globalassets/home/HP-promo-opp2.jpg") !important;
-}
---></style>
+    </div>
+</section><!-- end links-section section -->
+
+
+
+
+    
+
+
+
+        <section id="Overview" class="default-section overview " >
+            <div class="container">
+                <div class="row">
+
+                    
+
+    <div class="col-lg-6 overview__item__item overview__item__item--text - left" data-aos="fade-right">
+        <h2>Engineered for Large, Data-Intensive Workloads.</h2>
+        <p>Unabated data growth is now a fact of life, creating new challenges that are pushing the boundaries of legacy storage systems. Just being able to scale is no longer satisfactory. The exponential growth of unstructured data, coupled with new storage paradigms and escalating demands from line-of-business and applicationowners, is driving up the complexity of managing the storage environment. This increased complexity rapidly diminishes the ability of the storage infrastructure to quickly ingest, globally share, and efficiently manage large data sets of increasingly larger files, all while maintaining optimized performance levels with maximum availability. StorNext® is engineered to satisfy the modern storage requirements of the most demanding applications and workloads.</p>
+        
+    </div>
+    <div class="col-lg-6 overview__item" data-aos="fade-left">
+                <img data-src="/globalassets/testingimagestbd/def-image.jpg" class="overview__item__image - wrapper" alt="Image"/>
+
+    </div>
+
+
+    <div class="col-lg-6 overview__item" data-aos="fade-right">
+                <img data-src="/globalassets/testingimagestbd/def-image.jpg" class="overview__item__image - wrapper" alt="Image"/>
+
+    </div>
+    <div class="col-lg-6 overview__item__item overview__item__item--text - right" data-aos="fade-left">
+        <h2>Engineered for Large, Data-Intensive Workloads.</h2>
+        <p>Unabated data growth is now a fact of life, creating new challenges that are pushing the boundaries of legacy storage systems. Just being able to scale is no longer satisfactory. The exponential growth of unstructured data, coupled with new storage paradigms and escalating demands from line-of-business and applicationowners, is driving up the complexity of managing the storage environment. This increased complexity rapidly diminishes the ability of the storage infrastructure to quickly ingest, globally share, and efficiently manage large data sets of increasingly larger files, all while maintaining optimized performance levels with maximum availability. StorNext® is engineered to satisfy the modern storage requirements of the most demanding applications and workloads.</p>
+        
+    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+    
+        <section class="products default-section gray-bg" data-uk-scrollspy="{cls:'uk-animation-fade'}" id="Products">
+            <div class="container">
+                <h2 class="no-margin-bottom">Quick compare: File Storage products</h2>
+                <div class="products__slider-wrapper">
+                    <div class="products__slider products__slider--hidden">
+                        <div class="products__item">
+                            <div class="products__item-cell products__item-cell--image"></div>
+                                <div class="products__item-cell products__item-cell--specs">
+                                    <span>Specs </span>
+                                </div>
+                                                            <div class="products__item-cell products__item-cell--data">
+                                    <span>Data </span>
+                                </div>
+                                                    </div>
+                    </div>
+                    <div class="products__slider products__slider-js owl-carousel">
+                        
+<div class="products__item">
+    <a href="/en/products/scale-out-storage/xcellis-application-director/" class="products__item-link products__item-cell products__item-cell--image">
+        <img src="/globalassets/testingimagestbd/product-1.png" class="products__item-image" alt="product">
+        <h3 class="products__item-title">
+            Scalar i3
+        </h3>
+
+    </a>
+        <div class="products__item-cell products__item-cell--specs">
+            <p class="products__item-description">25 - 200 slots, up to 6PB</p>
+<p class="products__item-description">1 - 12 Half-High drives</p>
+<p class="products__item-description">3U to 12U</p>
+        </div>
+            <div class="products__item-cell products__item-cell--data">
+            <p class="products__item-description">SCSI / 8GB FC, 6GB SAS</p>
+        </div>
+    
+
+
+        <a href="/en/products/scale-out-storage/xcellis-application-director/" class="btn btn-solid-blue m-t-40"> Explore Scalar i3</a>
+    </div>
+
+
+
+<div class="products__item">
+    <a href="/en/products/scale-out-storage/xcellis-application-director/" class="products__item-link products__item-cell products__item-cell--image">
+        <img src="/globalassets/testingimagestbd/product-1.png" class="products__item-image" alt="product">
+        <h3 class="products__item-title">
+            Scalar i3---2
+        </h3>
+
+    </a>
+        <div class="products__item-cell products__item-cell--specs">
+            <p class="products__item-description">25 - 200 slots, up to 6PB</p>
+<p class="products__item-description">1 - 12 Half-High drives</p>
+<p class="products__item-description">3U to 12U</p>
+        </div>
+            <div class="products__item-cell products__item-cell--data">
+            <p class="products__item-description">SCSI / 8GB FC, 6GB SAS</p>
+        </div>
+    
+
+
+        <a href="/en/products/scale-out-storage/xcellis-application-director/" class="btn btn-solid-blue m-t-40"> Explore Scalar i3</a>
+    </div>
+
+
+
+<div class="products__item">
+    <a href="/en/products/scale-out-storage/xcellis-application-director/" class="products__item-link products__item-cell products__item-cell--image">
+        <img src="/globalassets/testingimagestbd/product-1.png" class="products__item-image" alt="product">
+        <h3 class="products__item-title">
+            Scalar i3--3
+        </h3>
+
+    </a>
+        <div class="products__item-cell products__item-cell--specs">
+            <p class="products__item-description">25 - 200 slots, up to 6PB</p>
+<p class="products__item-description">1 - 12 Half-High drives</p>
+<p class="products__item-description">3U to 12U</p>
+        </div>
+            <div class="products__item-cell products__item-cell--data">
+            <p class="products__item-description">SCSI / 8GB FC, 6GB SAS</p>
+        </div>
+    
+
+
+        <a href="/en/products/scale-out-storage/xcellis-application-director/" class="btn btn-solid-blue m-t-40"> Explore Scalar i3</a>
+    </div>
+
+
+
+                    </div>
                 </div>
             </div>
-            <div class="row" data-aos="fade-up" data-aos-duration="1500">
-                
+        </section>
+        <!-- end products section -->
+    
+
+
+
+        <section id="Benefits" class="default-section benefits   ">
+            <div class="container">
+                    <h2 class="__title">Featured Benefits</h2>
+                <div class="row">
+                    
+
+<div class="col-lg-6 benefits__item" data-aos=fade-left>
+    <div class="benefits__item-header">
+                <img data-src="/globalassets/testingimagestbd/enhanced-stornext-client.png" class="icon icon-benefit " alt="Image"/>
+
+
+        <h3>Realizing the Economics of Shared Storage</h3>
+    </div>
+    <p>StorNext can automatically move data across multiple tiers of storage by policy, while maintaining shared&nbsp;global access. This tiering empowers users to efficiently move less-frequently accessed data to the most&nbsp;cost-effective, “green” storage with best-in-class data protection. And even when a file has been tiered to&nbsp;a different type of storage, it still appears local, so users have continuous access to their data. No&nbsp;distractions, no compromises.</p>
+</div>
+
+
+<div class="col-lg-6 benefits__item" data-aos=fade-left>
+    <div class="benefits__item-header">
+                <img data-src="/globalassets/testingimagestbd/file-copy-exploration.png" class="icon icon-benefit " alt="Image"/>
+
+
+        <h3>Realizing the Economics of Shared Storage</h3>
+    </div>
+    <p>StorNext can automatically move data across multiple tiers of storage by policy, while maintaining shared&nbsp;global access. This tiering empowers users to efficiently move less-frequently accessed data to the most&nbsp;cost-effective, “green” storage with best-in-class data protection. And even when a file has been tiered to&nbsp;a different type of storage, it still appears local, so users have continuous access to their data. No&nbsp;distractions, no compromises.</p>
+</div>
+
+
+<div class="col-lg-6 benefits__item" data-aos=fade-left>
+    <div class="benefits__item-header">
+                <img data-src="/globalassets/testingimagestbd/global-sharing.png" class="icon icon-benefit " alt="Image"/>
+
+
+        <h3>Realizing the Economics of Shared Storage</h3>
+    </div>
+    <p>StorNext can automatically move data across multiple tiers of storage by policy, while maintaining shared&nbsp;global access. This tiering empowers users to efficiently move less-frequently accessed data to the most&nbsp;cost-effective, “green” storage with best-in-class data protection. And even when a file has been tiered to&nbsp;a different type of storage, it still appears local, so users have continuous access to their data. No&nbsp;distractions, no compromises.</p>
+</div>
+
+
+<div class="col-lg-6 benefits__item" data-aos=fade-left>
+    <div class="benefits__item-header">
+                <img data-src="/globalassets/testingimagestbd/multi-file-replication.png" class="icon icon-benefit " alt="Image"/>
+
+
+        <h3>Realizing the Economics of Shared Storage</h3>
+    </div>
+    <p>StorNext can automatically move data across multiple tiers of storage by policy, while maintaining shared&nbsp;global access. This tiering empowers users to efficiently move less-frequently accessed data to the most&nbsp;cost-effective, “green” storage with best-in-class data protection. And even when a file has been tiered to&nbsp;a different type of storage, it still appears local, so users have continuous access to their data. No&nbsp;distractions, no compromises.</p>
+</div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+    
+        <section class="default-section bg-light-grey benefits" data-aos="fade-up" data-aos-duration="1500" id="Solutions">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 text-center">
+                        <h2>File Product Solution Areas</h2>
+                    </div>
+                </div>
+                <div class="row" data-aos="fade-up" data-aos-duration="1500">
+                    
 
 
 <div class="col-xs-6 col-md-3 text-center bounce products-container ">
     <a href="/en/solutions/media-and-entertainment/">
-        <div class="text-center me product">
+        <div class="text-center text-grey section-53370d8a-5df2-4488-b5f5-48825db9ce37 product">
             
             <h4 class="text-uppercase m-t-10">MEDIA &amp; ENTERTAINMENT</h4>
         </div>
@@ -2431,604 +2611,73 @@ overflow: hidden;
         </div>
     </a>
 </div>
-            </div>
-        </div>
-    </section>
-
-
-<section class="bg-light-grey who">
-    <div class="container">
-        <div class="row">           
-                <div class="col-xs-12 col-md-6" data-aos="fade-right" data-aos-duration="1500">
-                            <img src="/globalassets/home/hp-who-we-are-globe.png" class="why" alt="Quantum - Who we are"/>
-
-                </div>
-                <div class="col-xs-12 col-md-6" data-aos="fade-left" data-aos-duration="1500">
-                    <h2>WHO WE ARE</h2>
-                    <p>Whether it’s unlocking the potential of digital content, powering breakthrough innovations, creating entertainment that enriches lives, or keeping nations secure, Quantum works with customers and partners to make the world a happier, safer and smarter place.<br /><br />We do this by collaborating with broadcasters, post-production houses, corporate brands and sports teams to meet aggressive production deadlines and create compelling content. We enable government agencies to explore space, better understand and preserve the environment, protect borders, and keep their citizens safe. We help massive cloud providers preserve video, images and memories for years at the lowest cost. And we power industries as diverse as autonomous vehicle development, genomics, geospatial and energy as they innovate at the edge.</p>
-                        <blockquote class="no-margin-left">
-                            <img src="/Content/Images/open-quote.png" alt="opening quote">Quantum is woven so deeply into the fabric of our society that you interact with us almost daily. Whenever you watch television or online content, or go to the latest blockbuster, chances are you’ll see something produced on our gear: whether it’s films, episodic shows, news, sports, or anything else.      <img src="/Content/images/close-quote.png" alt="closing quote">
-                        </blockquote>
-                    <p class="text-small no-margin-bottom"><strong>Jamie Lerner</strong></p>
-<p class="company-title">CEO, Quantum</p>                   
                 </div>
 
-        </div>
-    </div>
-</section>
-<section class="bg-light-grey who">
-    <div class="container">
-        <div class="row">           
-                        <div class="col-xs-12 col-md-6 col-md-push-6" data-aos="fade-left" data-aos-duration="1500">
-                                    <img src="/globalassets/home/hp-what-we-do.png" class="who" alt="What we do"/>
-
-                        </div>
-                        <div class="col-xs-12 col-md-6 col-md-pull-6" data-aos="fade-right" data-aos-duration="1500">
-                            <h2>WHAT WE DO</h2>
-                            <p>Video—and video-like data—is everywhere, and it’s becoming essential to society. In fact, by 2025 80% of the world’s total data will be video and digital content.<br /><br />Quantum’s file system is uniquely designed for video, delivering the fastest streaming performance available. We are the industry experts for ingesting video and high-res content when efficiency is vital.<br /><br />We understand how to better preserve, protect and manage that content over time with solutions purpose-built for every stage of the data lifecycle–high-performance ingest, real-time collaboration and analysis, and low-cost archiving–on-premise or in the cloud.</p>
-                                <blockquote class="no-margin-left">
-                                    <img src="/Content/Images/open-quote.png" alt="opening quote">    When you’re editing video, you need to recall content in an unbroken stream. That isn’t something a regular disk array can provide. Quantum has a very video-centric workflow.       <img src="/Content/images/close-quote.png" alt="closing quote">
-                                </blockquote>
-                                                
-                        </div>
-
-        </div>
-    </div>
-</section><section class="bg-light-grey who work">
-		<div class="container">
-			<div class="row">
-				
-				<div class="col-xs-12" data-aos="fade-up" data-aos-duration="1500">
-					<h2 class="text-center">WHO WE WORK WITH</h2>
-						<div class="shadow" data-experience="5c37b5b98a482d0017d25c72"></div>
-						
-					<script src="https://players.brightcove.net/1453524560001/experience_5c37b5b98a482d0017d25c72/live.js"></script>
-				</div>
-			</div>
-		 </div>
-	  </section>
-
-
-<section>
-    <div class="container">
-        <div class="row text-center counter" data-aos="fade-up" data-aos-duration="1500">
-            
-            <h2 class="text-center text-primary">THE LEADER IN VIDEO</h2>
-            <div class="col-xs-6 col-sm-3 counter text-center">
-
-    <h3 class="h2 strong">#1</h3>
-    <h3 class="no-margin-top">Fastest streaming performance</h3>
-
-</div><div class="col-xs-6 col-sm-3 counter text-center">
-
-    <h3 class="h2 strong"><span class="count">90</span> %</h3>
-    <h3 class="no-margin-top">Top broadcasters &amp; post houses</h3>
-
-</div><div class="col-xs-6 col-sm-3 counter text-center">
-
-    <h3 class="h2 strong"><span class="count">40</span></h3>
-    <h3 class="no-margin-top">Years of innovation</h3>
-
-</div><div class="col-xs-6 col-sm-3 counter text-center">
-
-    <h3 class="h2 strong"><span class="count">25</span>K+</h3>
-    <h3 class="no-margin-top">Customers under support globally</h3>
-
-</div>
-        </div>
-    </div>
-</section>
-   	<section class="bg-primary" style="background-image: url(https://www.quantum.com/globalassets/home/NAB-blade-blue.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 25%;">
-   		<div class="container">
-   			<div class="row">
-   				<div class="col-xs-12 col-md-8" data-aos="fade-up" data-aos-duration="1500">
-   					<img src="https://www.quantum.com/globalassets/resources/events/nab-2019/nabshow_logo_white.png" alt="NAB logo">
-   					<h2>CAPTIVATING STORIES ARE CREATED... ON QUANTUM.</h2>
-   					<p class="lead"><strong>Booth #SL4409</strong> | April 8-11, 2019 | Las Vegas</p>
-   					<p><a href="https://www.quantum.com/nab" class="btn btn-transparent">Meet with us</a></p>						
-   				</div>
-   			</div>
-   		</div>
-   </section>
-
-
-<section class="text-center text-grey society">
-    <div class="container no-padding-bottom">
-        <div class="row">
-            <div class="col-xs-12 tile-container" data-aos="fade-up" data-aos-duration="1500">
-                <h2 class="text-center text-primary text-uppercase">  Quantum is deeply woven into the fabric of society</h2>
-                <p class="text-center p-b-40">From blockbuster movies to your favorite sports teams, self-driving vehicles, medical breakthroughs, space exploration, national security, and more – you interact with our technology every day.</p>
-                
-<!-- Desktop Tile-->
-<div class="hidden-xs hidden-sm hidden-md ">
-    <div class="col-md-12 no-margin-bottom">
-            <div data-aos="fade-up" data-aos-duration="1500" class="tile movie-studios">
-                <img src="https://www.quantum.com/globalassets/home/hp-TV-min.png" class="bounce" data-toggle="modal" data-target="#studios" />
             </div>
+        </section>
+            <section class="customers default-section" id="Customers">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 text-center">
+                        
+                    </div>
+                </div>
+                <div class="customers__nav">
+                    <div class="customers__nav-slider customers__nav-slider-js">
+                        <div class="customers__nav-item-wrapper">
+    <div class="customers__nav-item customers__nav-item--blue">
+        <img class="customers__logo" data-src="/globalassets/testingimagestbd/customer-1.png" alt="customer">
         
+        <img class="customers__logo-hover" data-src="/globalassets/testingimagestbd/customer-1.png" alt="customer">
     </div>
 </div>
 
-
-<!-- Mobile Tile-->
-<div class="hidden-lg hidden-xlg">
-    <div class="col-xs-4">
-        <img src="https://www.quantum.com/globalassets/home/hp-TV-min.png" data-toggle="modal" data-target="#studios-mobile" />
-    </div>
-</div>
-
-
-
-
-<!-- Desktop Tile-->
-<div class="hidden-xs hidden-sm hidden-md ">
-    <div class="col-md-6 no-margin-bottom">
-            <div data-aos="fade-up-left" data-aos-duration="1500" class="tile stadiums">
-                <img src="https://www.quantum.com/globalassets/home/hp-cities-min.png" class="bounce" data-toggle="modal" data-target="#stadiums" />
-            </div>
+<div class="customers__nav-item-wrapper">
+    <div class="customers__nav-item customers__nav-item--">
+        <img class="customers__logo" data-src="/contentassets/e9a4339fea29482ba27597879e8a1574/1303-systems.png" alt="customer">
         
+        <img class="customers__logo-hover" data-src="/contentassets/e9a4339fea29482ba27597879e8a1574/1303-systems.png" alt="customer">
     </div>
 </div>
 
-
-<!-- Mobile Tile-->
-<div class="hidden-lg hidden-xlg">
-    <div class="col-xs-4">
-        <img src="https://www.quantum.com/globalassets/home/hp-cities-min.png" data-toggle="modal" data-target="#stadiums-mobile" />
-    </div>
-</div>
-
-
-
-
-<!-- Desktop Tile-->
-<div class="hidden-xs hidden-sm hidden-md ">
-    <div class="col-md-6 no-margin-bottom">
-            <div data-aos="fade-up-right" data-aos-duration="1500" class="tile super-heroes">
-                <img src="https://www.quantum.com/globalassets/home/hp-medical-min.png" class="bounce" data-toggle="modal" data-target="#superheroes" />
-            </div>
+<div class="customers__nav-item-wrapper">
+    <div class="customers__nav-item customers__nav-item--">
+        <img class="customers__logo" data-src="/contentassets/6dfdff1be3ae4bc483e3d7bf1ee70e15/acdi-voca.png" alt="customer">
         
+        <img class="customers__logo-hover" data-src="/contentassets/6dfdff1be3ae4bc483e3d7bf1ee70e15/acdi-voca.png" alt="customer">
     </div>
 </div>
 
-
-<!-- Mobile Tile-->
-<div class="hidden-lg hidden-xlg">
-    <div class="col-xs-4">
-        <img src="https://www.quantum.com/globalassets/home/hp-medical-min.png" data-toggle="modal" data-target="#superheroes-mobile" />
-    </div>
-</div>
-
-
-
-
-<!-- Desktop Tile-->
-<div class="hidden-xs hidden-sm hidden-md ">
-    <div class="col-md-4 no-margin-bottom">
-            <div data-aos="fade-left" data-aos-duration="1500" class="tile pop-culture">
-                <img src="https://www.quantum.com/globalassets/home/hp-pop-min.png	" class="bounce" data-toggle="modal" data-target="#popculture" />
-            </div>
+<div class="customers__nav-item-wrapper">
+    <div class="customers__nav-item customers__nav-item--">
+        <img class="customers__logo" data-src="/contentassets/56bf7d25925f4ead93876d97dbd75a3c/logo-acendas.png" alt="customer">
         
-    </div>
-</div>
-
-
-<!-- Mobile Tile-->
-<div class="hidden-lg hidden-xlg">
-    <div class="col-xs-4">
-        <img src="https://www.quantum.com/globalassets/home/hp-pop-min.png	" data-toggle="modal" data-target="#popculture-mobile" />
+        <img class="customers__logo-hover" data-src="/contentassets/56bf7d25925f4ead93876d97dbd75a3c/logo-acendas.png" alt="customer">
     </div>
 </div>
 
 
 
-
-<!-- Desktop Tile-->
-<div class="hidden-xs hidden-sm hidden-md ">
-    <div class="col-md-4 no-margin-bottom">
-             <div  class="tile quantum">
-                <img src="https://www.quantum.com/globalassets/home/hp-on-quantum2.png" data-toggle="modal" data-target="#quantum" />
-            </div>
-        
-    </div>
-</div>
-
-
-<!-- Mobile Tile-->
-<div class="hidden-lg hidden-xlg">
-    <div class="col-xs-4">
-        <img src="https://www.quantum.com/globalassets/home/hp-on-quantum2.png" data-toggle="modal" data-target="#quantum-mobile" />
-    </div>
-</div>
-
-
-
-
-<!-- Desktop Tile-->
-<div class="hidden-xs hidden-sm hidden-md ">
-    <div class="col-md-4 no-margin-bottom">
-            <div data-aos="fade-right" data-aos-duration="1500" class="tile corporate-video">
-                <img src="https://www.quantum.com/globalassets/home/HP-brand-min.png" class="bounce" data-toggle="modal" data-target="#corporatevideo" />
-            </div>
-        
-    </div>
-</div>
-
-
-<!-- Mobile Tile-->
-<div class="hidden-lg hidden-xlg">
-    <div class="col-xs-4">
-        <img src="https://www.quantum.com/globalassets/home/HP-brand-min.png" data-toggle="modal" data-target="#corporatevideo-mobile" />
-    </div>
-</div>
-
-
-
-
-<!-- Desktop Tile-->
-<div class="hidden-xs hidden-sm hidden-md ">
-    <div class="col-md-6 no-margin-bottom">
-            <div data-aos="fade-down-left" data-aos-duration="1500" class="tile spaceflight">
-                <img src="https://www.quantum.com/globalassets/home/hp-space-min.png" class="bounce" data-toggle="modal" data-target="#spaceflight" />
-            </div>
-        
-    </div>
-</div>
-
-
-<!-- Mobile Tile-->
-<div class="hidden-lg hidden-xlg">
-    <div class="col-xs-4">
-        <img src="https://www.quantum.com/globalassets/home/hp-space-min.png" data-toggle="modal" data-target="#spaceflight-mobile" />
-    </div>
-</div>
-
-
-
-
-<!-- Desktop Tile-->
-<div class="hidden-xs hidden-sm hidden-md ">
-    <div class="col-md-6 no-margin-bottom">
-            <div data-aos="fade-down-right" data-aos-duration="1500" class="tile leading-fan">
-                <img src="https://www.quantum.com/globalassets/home/hp-fan-min.png" class="bounce" data-toggle="modal" data-target="#leadingfan" />
-            </div>
-        
-    </div>
-</div>
-
-
-<!-- Mobile Tile-->
-<div class="hidden-lg hidden-xlg">
-    <div class="col-xs-4">
-        <img src="https://www.quantum.com/globalassets/home/hp-fan-min.png" data-toggle="modal" data-target="#leadingfan-mobile" />
-    </div>
-</div>
-
-
-
-
-<!-- Desktop Tile-->
-<div class="hidden-xs hidden-sm hidden-md ">
-    <div class="col-md-12 no-margin-bottom">
-            <div data-aos="fade-down" data-aos-duration="1500" class="tile self-driving">
-                <img src="https://www.quantum.com/globalassets/home/hp-driving-min.png" class="bounce" data-toggle="modal" data-target="#selfdriving" />
-            </div>
-        
-    </div>
-</div>
-
-
-<!-- Mobile Tile-->
-<div class="hidden-lg hidden-xlg">
-    <div class="col-xs-4">
-        <img src="https://www.quantum.com/globalassets/home/hp-driving-min.png" data-toggle="modal" data-target="#selfdriving-mobile" />
-    </div>
-</div>
-
-
-
-
-            </div>
-        </div>
-    </div>
-</section>
-
-
-                <!-- Modal Popup Desktop Content-->
-                <div id="studios" class="modal fade">
-                    <div class="modal-dialog">
-                        <!-- Modal content-->
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button class="close" type="button" data-dismiss="modal">×</button>
-                            </div>
-                            <div class="modal-body">
-                                <p>“Post-production and dailies services for episodic television create unusual workflow and storage challenges. We bring enormous amounts of data into our system. We have deployed Quantum storage. It is capable of sustaining multiple real-time 4K streams. That means that my facility is probably the most efficient facility in the world in terms of feeding artists real-time 4K.” - Larry Chernoff, CEO, MTI Film</p>
-                            </div>
-                            <div class="modal-footer">
-                                <p class="btn btn-electric-blue" data-dismiss="modal">Close</p>
-                            </div>
-                        </div>
+                    </div>
+                    <div class="customers__nav-link">
+                        <a href="/en/resources/customer-success/" class="customers__nav-item">
+                            <i class="fas fa-arrow-right"></i>
+                            <span>  View More Customer Stories</span>
+                        </a>
                     </div>
                 </div>
-<!-- Modal Popup Mobile Content-->
-                    <div id="studios-mobile" class="modal fade">
-                        <div class="modal-dialog">
-                            <!-- Modal content-->
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button class="close" type="button" data-dismiss="modal">×</button>
-                                </div>
-                                <div class="modal-body">
-                                    <p>“Post-production and dailies services for episodic television create unusual workflow and storage challenges. We bring enormous amounts of data into our system. We have deployed Quantum storage. It is capable of sustaining multiple real-time 4K streams. That means that my facility is probably the most efficient facility in the world in terms of feeding artists real-time 4K.” - Larry Chernoff, CEO, MTI Film</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <p class="btn btn-electric-blue" data-dismiss="modal">Close</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                <!-- Modal Popup Desktop Content-->
-                <div id="stadiums" class="modal fade">
-                    <div class="modal-dialog">
-                        <!-- Modal content-->
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button class="close" type="button" data-dismiss="modal">×</button>
-                            </div>
-                            <div class="modal-body">
-                                <p> “Surveillance data is unusual. It is a critical asset—it must be kept under our direct control for decades in some cases, and it must be protected. But most of it will never be looked at again. So it does not make any sense at all to keep it on live disk. With StorNext, we don’t have to. It lets us use our existing resource, our library, to store all that data at a cost that was far, far lower than any disk-only solution we saw.” - Corey Dunn, Technical Services Manager, City of Calgary Police Service</p>
-                            </div>
-                            <div class="modal-footer">
-                                <p class="btn btn-electric-blue" data-dismiss="modal">Close</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-<!-- Modal Popup Mobile Content-->
-                    <div id="stadiums-mobile" class="modal fade">
-                        <div class="modal-dialog">
-                            <!-- Modal content-->
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button class="close" type="button" data-dismiss="modal">×</button>
-                                </div>
-                                <div class="modal-body">
-                                    <p> “Surveillance data is unusual. It is a critical asset—it must be kept under our direct control for decades in some cases, and it must be protected. But most of it will never be looked at again. So it does not make any sense at all to keep it on live disk. With StorNext, we don’t have to. It lets us use our existing resource, our library, to store all that data at a cost that was far, far lower than any disk-only solution we saw.” - Corey Dunn, Technical Services Manager, City of Calgary Police Service</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <p class="btn btn-electric-blue" data-dismiss="modal">Close</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                <!-- Modal Popup Desktop Content-->
-                <div id="superheroes" class="modal fade">
-                    <div class="modal-dialog">
-                        <!-- Modal content-->
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button class="close" type="button" data-dismiss="modal">×</button>
-                            </div>
-                            <div class="modal-body">
-                                <p>“Advances in medical imaging are helping patients around the world get better care. Quantum helps imaging sciences teams stay focused on driving research forward—rather than on managing the storage infrastructure.” - Jeff Plum, Vice President, MedData Research, contractor for National Institutes of Health (NIH) </p>
-                            </div>
-                            <div class="modal-footer">
-                                <p class="btn btn-electric-blue" data-dismiss="modal">Close</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-<!-- Modal Popup Mobile Content-->
-                    <div id="superheroes-mobile" class="modal fade">
-                        <div class="modal-dialog">
-                            <!-- Modal content-->
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button class="close" type="button" data-dismiss="modal">×</button>
-                                </div>
-                                <div class="modal-body">
-                                    <p>“Advances in medical imaging are helping patients around the world get better care. Quantum helps imaging sciences teams stay focused on driving research forward—rather than on managing the storage infrastructure.” - Jeff Plum, Vice President, MedData Research, contractor for National Institutes of Health (NIH) </p>
-                                </div>
-                                <div class="modal-footer">
-                                    <p class="btn btn-electric-blue" data-dismiss="modal">Close</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                <!-- Modal Popup Desktop Content-->
-                <div id="popculture" class="modal fade">
-                    <div class="modal-dialog">
-                        <!-- Modal content-->
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button class="close" type="button" data-dismiss="modal">×</button>
-                            </div>
-                            <div class="modal-body">
-                                <p>“Working in a single, shared storage environment has allowed for greatly improved efficiency—and StorNext’s performance allows our editors to directly work on the highest-resolution content in full native 4K. Best of all, it’s opened the door to integrating a multitude of other services, allowing us to manage, edit, produce, and distribute our content in ways we’d previously only dreamt of. StorNext has provided us with a reliable foundation to build out the appropriate technological infrastructure needed to support the growth of a global brand and media empire.” - Jermaine Harrell, Manager of Video IT Operations, Complex Networks</p>
-                            </div>
-                            <div class="modal-footer">
-                                <p class="btn btn-electric-blue" data-dismiss="modal">Close</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-<!-- Modal Popup Mobile Content-->
-                    <div id="popculture-mobile" class="modal fade">
-                        <div class="modal-dialog">
-                            <!-- Modal content-->
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button class="close" type="button" data-dismiss="modal">×</button>
-                                </div>
-                                <div class="modal-body">
-                                    <p>“Working in a single, shared storage environment has allowed for greatly improved efficiency—and StorNext’s performance allows our editors to directly work on the highest-resolution content in full native 4K. Best of all, it’s opened the door to integrating a multitude of other services, allowing us to manage, edit, produce, and distribute our content in ways we’d previously only dreamt of. StorNext has provided us with a reliable foundation to build out the appropriate technological infrastructure needed to support the growth of a global brand and media empire.” - Jermaine Harrell, Manager of Video IT Operations, Complex Networks</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <p class="btn btn-electric-blue" data-dismiss="modal">Close</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                <!-- Modal Popup Desktop Content-->
-                <div id="corporatevideo" class="modal fade">
-                    <div class="modal-dialog">
-                        <!-- Modal content-->
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button class="close" type="button" data-dismiss="modal">×</button>
-                            </div>
-                            <div class="modal-body">
-                                <p> “We work with lots of different creative teams in other companies, which allows us to focus all our energy on production and implementation—and we really understand that well. One constant since Hogarth’s early days has been Quantum’s StorNext. We started converting Xsan environments to StorNext very early to take advantage of its flexibility, performance, and scale. And it gave us the capability to let our teams collaborate on projects no matter what platform they were using—Macs, Linux, or Windows.” - Nick Wood, Production Systems Manager, Hogarth</p>
-                            </div>
-                            <div class="modal-footer">
-                                <p class="btn btn-electric-blue" data-dismiss="modal">Close</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-<!-- Modal Popup Mobile Content-->
-                    <div id="corporatevideo-mobile" class="modal fade">
-                        <div class="modal-dialog">
-                            <!-- Modal content-->
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button class="close" type="button" data-dismiss="modal">×</button>
-                                </div>
-                                <div class="modal-body">
-                                    <p> “We work with lots of different creative teams in other companies, which allows us to focus all our energy on production and implementation—and we really understand that well. One constant since Hogarth’s early days has been Quantum’s StorNext. We started converting Xsan environments to StorNext very early to take advantage of its flexibility, performance, and scale. And it gave us the capability to let our teams collaborate on projects no matter what platform they were using—Macs, Linux, or Windows.” - Nick Wood, Production Systems Manager, Hogarth</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <p class="btn btn-electric-blue" data-dismiss="modal">Close</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                <!-- Modal Popup Desktop Content-->
-                <div id="spaceflight" class="modal fade">
-                    <div class="modal-dialog">
-                        <!-- Modal content-->
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button class="close" type="button" data-dismiss="modal">×</button>
-                            </div>
-                            <div class="modal-body">
-                                <p>“Each satellite streams 250 MB of data per second, which is more than 1 PB each per year. And each satellite typically has a design life of 5 years. Sometimes as many as 15 years. We archive not only the raw, level 0, instrument data but also data processed by ESA’s Payload Data Ground Segment, which generates level 1 and level 2 products. To provide a long-term archive for all that data, we needed a storage solution that could scale to tens of petabytes.” - Mark Curtis, Technical Design Authority, Airbus Defence and Space</p>
-                            </div>
-                            <div class="modal-footer">
-                                <p class="btn btn-electric-blue" data-dismiss="modal">Close</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-<!-- Modal Popup Mobile Content-->
-                    <div id="spaceflight-mobile" class="modal fade">
-                        <div class="modal-dialog">
-                            <!-- Modal content-->
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button class="close" type="button" data-dismiss="modal">×</button>
-                                </div>
-                                <div class="modal-body">
-                                    <p>“Each satellite streams 250 MB of data per second, which is more than 1 PB each per year. And each satellite typically has a design life of 5 years. Sometimes as many as 15 years. We archive not only the raw, level 0, instrument data but also data processed by ESA’s Payload Data Ground Segment, which generates level 1 and level 2 products. To provide a long-term archive for all that data, we needed a storage solution that could scale to tens of petabytes.” - Mark Curtis, Technical Design Authority, Airbus Defence and Space</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <p class="btn btn-electric-blue" data-dismiss="modal">Close</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                <!-- Modal Popup Desktop Content-->
-                <div id="leadingfan" class="modal fade">
-                    <div class="modal-dialog">
-                        <!-- Modal content-->
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button class="close" type="button" data-dismiss="modal">×</button>
-                            </div>
-                            <div class="modal-body">
-                                <p>“The results were dramatic. The StorNext and Vantage workflow reduced the time needed to post content dramatically—projects that could take hours to complete were out and to the fans in minutes. That meant that people attending a game could watch highlights on their smartphones while they were walking to their cars. That was just what we wanted.” - Scott Rinehart, Director of Broadcast Technology, Fighting Irish Media</p>
-                            </div>
-                            <div class="modal-footer">
-                                <p class="btn btn-electric-blue" data-dismiss="modal">Close</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-<!-- Modal Popup Mobile Content-->
-                    <div id="leadingfan-mobile" class="modal fade">
-                        <div class="modal-dialog">
-                            <!-- Modal content-->
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button class="close" type="button" data-dismiss="modal">×</button>
-                                </div>
-                                <div class="modal-body">
-                                    <p>“The results were dramatic. The StorNext and Vantage workflow reduced the time needed to post content dramatically—projects that could take hours to complete were out and to the fans in minutes. That meant that people attending a game could watch highlights on their smartphones while they were walking to their cars. That was just what we wanted.” - Scott Rinehart, Director of Broadcast Technology, Fighting Irish Media</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <p class="btn btn-electric-blue" data-dismiss="modal">Close</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                <!-- Modal Popup Desktop Content-->
-                <div id="selfdriving" class="modal fade">
-                    <div class="modal-dialog">
-                        <!-- Modal content-->
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button class="close" type="button" data-dismiss="modal">×</button>
-                            </div>
-                            <div class="modal-body">
-                                <p>&quot;Autonomous research generates an enormous volume of data which is vital to achieving the goal of a safe autonomous vehicle. Quantum offers a highly scalable and economical solution to the data dilemma researchers face.&quot; -Bobby Hambrick, Founder and CEO, AutonomouStuff</p>
-                            </div>
-                            <div class="modal-footer">
-                                <p class="btn btn-electric-blue" data-dismiss="modal">Close</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-<!-- Modal Popup Mobile Content-->
-                    <div id="selfdriving-mobile" class="modal fade">
-                        <div class="modal-dialog">
-                            <!-- Modal content-->
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button class="close" type="button" data-dismiss="modal">×</button>
-                                </div>
-                                <div class="modal-body">
-                                    <p>&quot;Autonomous research generates an enormous volume of data which is vital to achieving the goal of a safe autonomous vehicle. Quantum offers a highly scalable and economical solution to the data dilemma researchers face.&quot; -Bobby Hambrick, Founder and CEO, AutonomouStuff</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <p class="btn btn-electric-blue" data-dismiss="modal">Close</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="customers__slider customers__slider-js">
+                    <div class="customers__slider-item">
+    <div class="row">
+        <div class="col-lg-7 order-lg-1">
+                <div class="customers__video-wrapper">
+                    
 
-
-
-<section class="bg-light-grey overflowfix">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12" data-aos="fade-up" data-aos-duration="1500">
-                
-                <h2 class="h2 strong">WHAT'S NEW AT QUANTUM</h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-12 col-md-7" data-aos="fade-right" data-aos-duration="1500">
-                <div class="bc-quantum-video-wide">
-                    <div class="embed-responsive embed-responsive-16by9">
 <div class="bc-quantum-video-wide">
     <div class="embed-responsive embed-responsive-16by9">
         <video data-account="1453524560001" 
                data-player="HySGi4sIG" 
-               data-video-id="6001344361001" 
+               data-video-id="5289525915001" 
                data-embed="default" 
                data-application-id 
                class="video-js" 
@@ -3036,58 +2685,338 @@ overflow: hidden;
                style="position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px; width: 100%; height: 100%;"></video>
         <script src="//players.brightcove.net/1453524560001/HySGi4sIG_default/index.min.js"></script>
     </div>
-</div>                    </div>
+</div>
+                </div>
                     
+         </div>
+        <div class="col-lg-5 order-lg-0">
+            <p><a href="http://www.baltimoreravens.com/" target="_new">The Baltimore Ravens</a> are a professional American football team based in Baltimore, Maryland, playing in the AFC North of the American Football Conference (AFC) in the National Football League (NFL). The team is owned by Steve Bisciotti, and has played its home games at M&amp;T Bank Stadium in downtown Baltimore since 1998. The team is headquartered at the Under Armour Performance Center in Owings Mills. The Ravens have experienced great success in their history: they made the playoffs ten times since 2000, with two Super Bowl victories (Super Bowl XXXV and Super Bowl XLVII), two AFC Championship titles (2000 and 2012), four AFC North division titles (2003, 2006, 2011 and 2012), and are currently the only team in the NFL to hold a perfect record in multiple Super Bowl appearances.</p>
+            <a href="/en/resources/customer-success/baltimore-ravens/" class="btn btn-purple m-t-20">View Full Customer Story</a>
+        </div>
+    </div>
+</div>
+
+
+<div class="customers__slider-item">
+    <div class="row">
+        <div class="col-lg-7 order-lg-1">
+                <div class="customers__video-wrapper">
+                    
+
+<div class="bc-quantum-video-wide">
+    <div class="embed-responsive embed-responsive-16by9">
+        <video data-account="1453524560001" 
+               data-player="HySGi4sIG" 
+               data-video-id="3943738175001" 
+               data-embed="default" 
+               data-application-id 
+               class="video-js" 
+               controls 
+               style="position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px; width: 100%; height: 100%;"></video>
+        <script src="//players.brightcove.net/1453524560001/HySGi4sIG_default/index.min.js"></script>
+    </div>
+</div>
+                </div>
+                    
+         </div>
+        <div class="col-lg-5 order-lg-0">
+            
+            <a href="/en/resources/customer-success/1303-systems/" class="btn btn-purple m-t-20">View Full Customer Story</a>
+        </div>
+    </div>
+</div>
+
+
+<div class="customers__slider-item">
+    <div class="row">
+        <div class="col-lg-7 order-lg-1">
+                <div class="customers__image-wrapper">
+                            <img data-src="/contentassets/6dfdff1be3ae4bc483e3d7bf1ee70e15/acdi_voca.jpg" alt="ACDI/VOCA" />
+
+                    </div>
+                    
+         </div>
+        <div class="col-lg-5 order-lg-0">
+            
+            <a href="/en/resources/customer-success/acdivoca/" class="btn btn-purple m-t-20">View Full Customer Story</a>
+        </div>
+    </div>
+</div>
+
+
+<div class="customers__slider-item">
+    <div class="row">
+        <div class="col-lg-7 order-lg-1">
+                <div class="customers__image-wrapper">
+                            <img data-src="/contentassets/56bf7d25925f4ead93876d97dbd75a3c/acendas.jpg" alt="Acendas" />
+
+                    </div>
+                    
+         </div>
+        <div class="col-lg-5 order-lg-0">
+            
+            <a href="/en/resources/customer-success/acendas/" class="btn btn-purple m-t-20">View Full Customer Story</a>
+        </div>
+    </div>
+</div>
+
 
 
                 </div>
             </div>
-            <a href="/en/resources/events/" target="_blank">
-    <div class="col-xs-12 col-md-4 bg-electric new" data-aos="fade-left" data-aos-duration="1500">
-        <h5>EVENTS</h5>
-<h4 class="no-margin-top">HIMSS 19</h4>
-<p class="text-small m-b-10">February 11-15, 2019</p>
+        </section>
+            <section class="partners default-section white-text" id="Partners">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="partners__text">
+                            <h2>Run the technology of your choice</h2>
+                            <p class="partners__description">
+                                Our strategic Technology Partners are fundamental technology providers who support and deeply integrate their solutions with Quantum products.
+                            </p>
+                            <a href="/en/partners/" class="btn btn-solid-blue d-none d-lg-inline-block">
+                                Explore Our Partners
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="row">
+                            
 
+                           <div class="row">
+<div class="col-xs-6 col-sm-4 col-md-3 col-sm-no-padding isotope-item cat-1008 cat-1137">
+    <a class="partners__item" href="/qdxapi/partnerdetails/?contentLink=12209" data-remote="false" data-toggle="modal" data-target="#CustomerStoryModal">
+        
+            <img class="center-item" alt="3VR provides video business intelligence solutions." data-src="/globalassets/partner-logos/3vr.png" />
+            
+        
+    </a>
+</div>
+<div class="col-xs-6 col-sm-4 col-md-3 col-sm-no-padding isotope-item cat-1138 cat-1152">
+    <a class="partners__item" href="/qdxapi/partnerdetails/?contentLink=12214" data-remote="false" data-toggle="modal" data-target="#CustomerStoryModal">
+        
+            <img class="center-item" alt="Acronis" data-src="/globalassets/partner-logos/acronis.png" />
+            
+        
+    </a>
+</div>
+<div class="col-xs-6 col-sm-4 col-md-3 col-sm-no-padding isotope-item cat-1131 cat-1138">
+    <a class="partners__item" href="/qdxapi/partnerdetails/?contentLink=12211" data-remote="false" data-toggle="modal" data-target="#CustomerStoryModal">
+        
+            <img class="center-item" alt="AJA" data-src="/globalassets/partner-logos/aja.png" />
+            
+        
+    </a>
+</div>
+<div class="col-xs-6 col-sm-4 col-md-3 col-sm-no-padding isotope-item cat-1131 cat-1138">
+    <a class="partners__item" href="/qdxapi/partnerdetails/?contentLink=12213" data-remote="false" data-toggle="modal" data-target="#CustomerStoryModal">
+        
+            <img class="center-item" alt="Apace" data-src="/globalassets/partner-logos/apace_logo.png" />
+            
+        
+    </a>
+</div>
+<div class="col-xs-6 col-sm-4 col-md-3 col-sm-no-padding isotope-item cat-1131 cat-1138">
+    <a class="partners__item" href="/qdxapi/partnerdetails/?contentLink=12212" data-remote="false" data-toggle="modal" data-target="#CustomerStoryModal">
+        
+            <img class="center-item" alt="AppTek" data-src="/globalassets/partner-logos/apptek.png" />
+            
+        
+    </a>
+</div>
+<div class="col-xs-6 col-sm-4 col-md-3 col-sm-no-padding isotope-item cat-1008 cat-1131">
+    <a class="partners__item" href="/qdxapi/partnerdetails/?contentLink=12210" data-remote="false" data-toggle="modal" data-target="#CustomerStoryModal">
+        
+            <img class="center-item" alt="Archiware GmbH" data-src="/globalassets/partner-logos/archiware.png" />
+            
+        
+    </a>
+</div></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section><!-- end technology section -->
+            <section class="resources default-section" id="Resources">
+            <div class="container">
+                <h2>File Products Resources</h2>
+                <div class="row resources__wrapper">
+
+<div class="col-lg-2">
+    <h3 class="resources__title">Featured</h3>
+</div>
+<div class="col-lg-10">
+    
+
+
+<a href="/en/resources/"  class="resources__item resources__item--featured" target="_blank">
+    <div class="resources__item-content">
+        <p class="resources__item-description webletdesc">
+                <i class="fas fa-star"></i>
+            Prepare Your Creative Agency for Expanding In-House Video Production        </p>
+        <div class="resources__item-file">
+            <span>17 pages | E-book  </span>
+            <i class="fas fa-book"></i>
+        </div>
     </div>
-</a><a href="https://www.tvtechnology.com/equipment/fox-sports-brasil-taps-quantum-to-improve-workflow" target="_blank">
-    <div class="col-xs-12 col-md-4 bg-orange new" data-aos="fade-left" data-aos-duration="1500">
-        <h5>LATEST NEWS</h5>
-<h4 class="no-margin-top">Fox Sports Brasil Scores With...</h4>
-
-    </div>
-</a><a href="http://investors.quantum.com/phoenix.zhtml?c=69905&amp;p=irol-newsArticle&amp;ID=2386459" target="_blank">
-    <div class="col-xs-12 col-md-4 bg-green new" data-aos="fade-left" data-aos-duration="1500">
-        <h5>PRESS RELEASES</h5>
-<h4 class="no-margin-top">Quantum Unveils Latest Xcellis Appliance...</h4>
-
+    <div class="resources__item-icon ">
+        <i class="fas fa-download"></i>
     </div>
 </a>
-       
+
+
+
+
+<a href="https://iq.quantum.com/exLink.asp?47139030OA98W76I160848108&amp;ST02061A&amp;view=1"  class="resources__item resources__item--featured" target="_blank">
+    <div class="resources__item-content">
+        <p class="resources__item-description webletdesc">
+                <i class="fas fa-star"></i>
+            StorNext Overview        </p>
+        <div class="resources__item-file">
+            <span>1:53 | Video  </span>
+            <i class="fas fa-film"></i>
         </div>
     </div>
-</section>
-<section class="bg-electric text-center contact">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12" data-aos="" data-aos-duration="1500">
-                <h2>JOIN OVER 25,000 COMPANIES WORLDWIDE USING QUANTUM TO POWER THE VIDEO AND RICH MEDIA YOU LOVE</h2>
-            </div>
-        </div>
-        <div class="row text-center" data-aos="" data-aos-duration="1500">
-            <div class="col-xs-12">
-                <p>
+    <div class="resources__item-icon ">
+        <i class="fas fa-play-circle"></i>
+    </div>
+</a>
 
-                    <a class="btn btn-transparent" href="/en/company/contact-us/"><i class="fas fa-phone"></i>&nbsp;Call Us (800) 677-6268</a>
 
-                        <a class="btn btn-transparent" href="javascript:$.Qchat_OpenChat();" onclick="_gaq.push(['_trackEvent', 'Connect popout', 'chat', 'Live Chat',, false]);"><i class="far fa-comment"></i>&nbsp;Live Chat</a>
-                    <a class="btn btn-transparent" href="/en/company/contact-us/"><i class="fas fa-envelope"></i>&nbsp;Request a Demo Today</a>
-                </p>
-                
-            </div>
+
+
+<a href="https://www.quantum.com/en/landing-pages/dxi-webinar/?utm_source=quantum&amp;utm_medium=quantum&amp;utm_campaign=dxi_webinar"  class="resources__item resources__item--featured" target="_blank">
+    <div class="resources__item-content">
+        <p class="resources__item-description webletdesc">
+                <i class="fas fa-star"></i>
+            Quantum Mission Information Workflow for GEOINT        </p>
+        <div class="resources__item-file">
+            <span>2:57 | Video  </span>
+            <i class="fas fa-film"></i>
         </div>
     </div>
-</section>
+    <div class="resources__item-icon ">
+        <i class="fas fa-play-circle"></i>
+    </div>
+</a>
 
+
+</div>                    
+
+
+
+<div class="col-lg-2">
+    <h3 class="resources__title">Featured</h3>
+</div>
+<div class="col-lg-10">
+            <a href="https://www.quantum.com/en/landing-pages/dxi-webinar/?utm_source=quantum&amp;utm_medium=quantum&amp;utm_campaign=dxi_webinar"  class="resources__item resources__item--featured" target="_blank">
+                <div class="resources__item-content">
+                    <p class="resources__item-description">
+                            <i class="fas fa-star"></i>
+                        Prepare Your Creative Agency for Expanding In-House Video Production
+                    </p>
+                    <div class="resources__item-file">
+                        
+                        <i class="fas fa-book"></i>
+                    </div>
+                </div>
+                <div class="resources__item-icon ">
+                    <i class="fas fa-download"></i>
+                </div>
+            </a>
+            <a href="https://iq.quantum.com/exLink.asp?47139030OA98W76I160848108&amp;ST02061A&amp;view=1"  class="resources__item resources__item--featured" target="_blank">
+                <div class="resources__item-content">
+                    <p class="resources__item-description">
+                            <i class="fas fa-star"></i>
+                        StorNext Overview
+                    </p>
+                    <div class="resources__item-file">
+                        
+                        <i class="fas fa-film"></i>
+                    </div>
+                </div>
+                <div class="resources__item-icon ">
+                    <i class="fas fa-play-circle"></i>
+                </div>
+            </a>
+</div>
+
+
+
+
+
+
+
+<div class="col-lg-2">
+    <h3 class="resources__title">DataSheets</h3>
+</div>
+<div class="col-lg-10">
+            <a href="https://iq.quantum.com/exLink.asp?58960702OT11S24I209039530&amp;DS00526&amp;view=1"  class="resources__item" target="_blank">
+                <div class="resources__item-content">
+                    <p class="resources__item-description">
+                        DXi9000 Datasheet
+                    </p>
+                    <div class="resources__item-file">
+                        
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                </div>
+                <div class="resources__item-icon ">
+                    <i class="fas fa-download"></i>
+                </div>
+            </a>
+            <a href="https://iq.quantum.com/exLink.asp?58937184OZ59Y65I209013840&amp;DS00525&amp;view=1"  class="resources__item" target="_blank">
+                <div class="resources__item-content">
+                    <p class="resources__item-description">
+                        DXi 4800 DataSheet
+                    </p>
+                    <div class="resources__item-file">
+                        
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                </div>
+                <div class="resources__item-icon ">
+                    <i class="fas fa-download"></i>
+                </div>
+            </a>
+</div>
+
+
+
+                </div>
+            </div>
+        </section>
+
+    
+        <section class="contacts default-section white-text" id="Support">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h2>Join over 25,000 companies worldwide using Quantum to power the video and rich media you love most. </h2>
+                        <div class="contacts__buttons-wrapper">
+                            <p>
+                                <a class="btn btn-transparent" href="/en/company/contact-us/"><i class="fas fa-phone"></i> Call Us (800) 677-6268 </a>
+                                <a class="btn btn-transparent" href="javascript:$.Qchat_OpenChat();" onclick="_gaq.push(['_trackEvent', 'Connect popout', 'chat', 'Live Chat',, false]);"><i class="far fa-comment"></i>Live Chat </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h2>Contact one of our experts</h2>
+                        <form id="mktoForm_3670"></form>
+                    </div>
+
+                    <div class="hidden-xs col-sm-6">
+                        
+                        
+                    </div>
+
+
+                </div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 166.37 151.92"><defs><linearGradient id="linear-gradient" x1="83.18" y1="151.92" x2="83.18" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#006dad" /><stop offset="1" stop-color="#006dad" /></linearGradient></defs><title>Q-icon</title><g id="Layer_2" data-name="Layer 2"><g id="svg4671"><path id="path4052" d="M76.25,129.61c-33.38,0-41.58-25-41.58-53.94,0-29.09,8.2-53,41.58-53,31.66,0,40.83,23.94,40.83,53C117.08,104.31,109.32,129.61,76.25,129.61Zm51,.47c0-.61,0-.88,0-1.14,13.59-7.36,24.25-15.18,24.25-53.27C151.51,27,134.82,0,76.25,0,17.08,0,0,27.94,0,75.67c0,51.3,19.53,76.25,76.25,76.25h90.12V130.08H127.25" style="fill:url(#linear-gradient)" /></g></g></svg>
+        </section><!-- end contacts section -->
+</main><!-- end main -->
 
 
 
@@ -3104,7 +3033,7 @@ overflow: hidden;
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-md-4 p-b-20">
-                    <a href="https://www.quantum.com/en/" class="header-logo"><img src="/Content/Images/quantum-logo-blue.png" alt="Quantum" title="Quantum"></a>
+                    <a href="https://www.quantum.com/en/" class="header-logo"><img data-src="/Content/Images/quantum-logo-blue.png" alt="Quantum" title="Quantum"></a>
                 </div>
                 <div class="col-xs-4 col-md-2">
     <div class="footer-links">
@@ -3195,18 +3124,52 @@ overflow: hidden;
 </footer>
 
 
-
+<!-- Fullstack ADDED: Add lazyload class to images using -->
+<!--load only on this page-->
+<script type="text/javascript">
+  window.addEventListener('DOMContentLoaded', (event) => {
+    startPage();
+  });
+  let lazyImages = document.querySelectorAll("img");
+  function startPage() {
+      lazyImages.forEach(function (image) {
+          if(image.hasAttribute('data-src')) {
+              image.classList.add("lazyload", "lazypreload");
+          }
+      });
+  }
+</script>
+<!--load only on this page-->
+<!-- Fullstack ADDED-->
     
-    <script src="/Scripts/vendor/jquery-1.12.4.min.js"></script>
+<script src="/Scripts/vendor/jquery-1.12.4.min.js"></script>
 <script src="/Scripts/vendor/bootstrap.js"></script>
 <script src="/Scripts/CustomNavigation.js"></script>
+
+<!--Fullstack Added: Load slim version of font awesome right after navigation-->
+<script src="/Scripts/all-slim.min.js"></script>
+<!--Fullstack Added: Load slim version of font awesome right after navigation-->
+
+<!--Fullstack Moved: Prioritize these scripts earlier-->
+<script src="/Scripts/vendor.js"></script>
+<script src="/Scripts/App.js"></script>
+<!--Fullstack Moved: Prioritize these scripts earlier-->
+
 <script src="/Scripts/vendor/jquery.actual.js"></script>
 <script src="/Scripts/vendor/viewportSize.js"></script>
 <script src="/Scripts/vendor/bootstrap-colequalizer.js"></script>
 <script src="/Scripts/vendor/jquery.hoverIntent.js"></script>
 <script src="/Scripts/vendor/font-awesome.js"></script>
-<script src="/Scripts/all.min.js"></script>
-<script src="/Scripts/vendor/owl.carousel.js"></script>
+
+<!--Fullstack note: do not add this scripts on this page-->
+<!-- <script src="/Scripts/all.min.js"></script> -->
+<!--Fullstack note: do not add this script on this page-->
+
+
+<!--Fullstack note: do not add this scripts on this page-->
+<!-- <script src="/Scripts/vendor/owl.carousel.js"></script> -->
+<!--Fullstack note: do not add this scripts on this page-->
+
 <script src="/Scripts/vendor/imagesloaded.pkgd.js"></script>
 <script src="/Scripts/vendor/isotope.pkgd.min.js"></script>
 <script src="/Scripts/templates.js"></script>
@@ -3215,7 +3178,6 @@ overflow: hidden;
 <script src="/Scripts/vendor/deployment.js"></script>
 <script src="/Scripts/cycle.js"></script>
 <script src="/Scripts/TrackingPixels.js"></script>
-
 
     <!-- Google Tag Manager (noscript) placed rite after body tag-->
     <noscript>
@@ -3245,6 +3207,9 @@ overflow: hidden;
 
     
     
+            <script src="//app-sji.marketo.com/js/forms2/js/forms2.min.js"></script>
+            <script>MktoForms2.loadForm("//app-sji.marketo.com", "561-AAR-658", 3670);</script>
+        
 
 
         <script type="text/javascript" async="async" src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-54ad713a42dc5d9e"></script>
@@ -3281,13 +3246,11 @@ overflow: hidden;
     <img height='0' width='0' alt='' src='https://pixel.mintigo.com/mintigo_pixel.png?pixel_cid=198e00a6ab' />
     <!-- End Mintego Pixel Tracker -->
 
-    <script type="text/javascript" src="/globalassets/home/deployment.js"></script>
-<script type="text/javascript" src="/globalassets/home/liveagentchat.js"></script>
-<script type="text/javascript" src="/Scripts/aos.js"></script>
+    
+<div class="modal fade" tabindex="-1" role="dialog" id="CustomerStoryModal"><div class="modal-dialog" role="document"><div class="modal-content"><div class="modal-body"></div></div></div></div>
+
+<script type="text/javascript" src="/scripts/technology-partners.js"></script>
 <script type="text/javascript" src="https://cdn.quantum.com/floatbox/floatbox.js"></script>
-<script type="text/javascript">
-AOS.init();
-</script>
 
        
 </body>
