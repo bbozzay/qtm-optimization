@@ -10,6 +10,10 @@ Preview Links:
 [Download Diff](https://www.diffchecker.com:46997/CzqNsgIK)
 * Update the HTML to use SVGs in the HTML.
 
+## Hamburger Navigation (applies to all Pages)
+[Download Diff](https://www.diffchecker.com/XQikUB2w)
+* Update the HTML to use SVGs in the HTML.
+
 ## Product Category Page
 [Download Diff](https://www.diffchecker.com/XqNB5NX7)
 * Update Vendor.js with [my new version](/Scripts/vendor.js)
