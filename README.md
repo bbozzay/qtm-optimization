@@ -14,7 +14,8 @@ Preview Links:
 [Download Diff](https://www.diffchecker.com/XqNB5NX7)
 * Update Vendor.js with [my new version](/Scripts/vendor.js)
 * Review diff for page specific changes. I tried to keep the same format you are currently using across the site.
-* The all.min.js is massive (3.4mb). Comment it out on this page only and use the file called all-slim.min.js (it has just the icons in use on this page).
+* Use data-src *instead* of src (remove src entirely) for images that should be lazyloaded. Owl-carousel images should not be lazyloaded.
+* The all.min.js is massive (3.4mb). I created a file called all-slim.min.js (it has just the icons in use on this page). Use in place of all.min.js for the product category page only (for now).
 
 
 # Changelog
